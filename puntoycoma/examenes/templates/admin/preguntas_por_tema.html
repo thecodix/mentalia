@@ -1,0 +1,9 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1>Preguntas por Tema</h1>
+<ul>
+    {% for pregunta in preguntas %}
+    <li>{{ pregunta.texto }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

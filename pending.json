@@ -1,0 +1,532 @@
+
+    {
+        "model": "examenes.pregunta",
+        "pk": 93,
+        "fields": {
+            "tema": 1,
+            "texto": "Con respecto al uso de indicadores sociales, cuando afirmamos que \nla tasa de desempleo en Huelva es superior a la media nacional , estamos usando \n\u00bfQu\u00e9 tipo de indicador?:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 229,
+        "fields": {
+            "pregunta": 93,
+            "texto": "",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 318,
+        "fields": {
+            "pregunta": 93,
+            "texto": "",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 319,
+        "fields": {
+            "pregunta": 93,
+            "texto": "",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 94,
+        "fields": {
+            "tema": 1,
+            "texto": "la investigaci\u00f3n que involucra la interacci\u00f3n entre el investigador y \nlos informantes durante el transcurso de la cual se recogen datos de \nmanera sistem\u00e1tica y no instructiva se corresponde: \u00bfcon cu\u00e1l de las \nsiguientes estrategias? \na) Observaci\u00f3n participantes. \nb) An\u00e1lisis de redes sociales. \nc) Aproximaci\u00f3n etnogr\u00e1fica."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 230,
+        "fields": {
+            "pregunta": 94,
+            "texto": "b) An\u00e1lisis de redes sociales. \nc) Aproximaci\u00f3n etnogr\u00e1fica.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 95,
+        "fields": {
+            "tema": 1,
+            "texto": "Espa\u00f1a es uno de los pa\u00edses en los que m\u00e1s personas son atropelladas por \ncruzar la calzada por un lugar distinto al paso de peatones. Esto es un ejemplo de \n_______ que favorece el problema de los accidentes de tr\u00e1fico. \na. posici\u00f3n \nb. contexto \nc. situaci\u00f3n."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 231,
+        "fields": {
+            "pregunta": 95,
+            "texto": "Esto es un ejemplo de \n_______ que favorece el problema de los accidentes de tr\u00e1fico.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 232,
+        "fields": {
+            "pregunta": 95,
+            "texto": "posici\u00f3n",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 233,
+        "fields": {
+            "pregunta": 95,
+            "texto": "contexto",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 234,
+        "fields": {
+            "pregunta": 95,
+            "texto": "situaci\u00f3n.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 96,
+        "fields": {
+            "tema": 1,
+            "texto": "Acoso escolar. Cuando el acosador recibe una valoraci\u00f3n positiva por parte de \nsus amigos por su conducta violenta contra un compa\u00f1ero de clase, se est\u00e1 \nproduciendo una incompatibilidad de los significados que se asocian a la conducta \nviolenta desde : \na) el texto y el supracontexto \nb) el texto y el propio sujeto \nc) el supracontexto y la familia. \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 15 | 17"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 235,
+        "fields": {
+            "pregunta": 96,
+            "texto": "Cuando el acosador recibe una valoraci\u00f3n positiva por parte de \nsus amigos por su conducta violenta contra un compa\u00f1ero de clase, se est\u00e1 \nproduciendo una incompatibilidad de los significados que se asocian a la conducta \nviolenta desde : \na) el texto y el supracontexto \nb) el texto y el propio sujeto \nc) el supracontexto y la familia. \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 15 | 17",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 97,
+        "fields": {
+            "tema": 1,
+            "texto": "Diagn\u00f3stico sist\u00e9mico de familia. Si diagnosticamos que una familia es \nnegantr\u00f3pica, eso quiere decir que se trata de una familia: \nA. anomica \nB. n\u00f3mica \nC. cuasin\u00f3mica."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 236,
+        "fields": {
+            "pregunta": 97,
+            "texto": "Si diagnosticamos que una familia es \nnegantr\u00f3pica, eso quiere decir que se trata de una familia: \nA. anomica \nB. n\u00f3mica \nC. cuasin\u00f3mica.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 98,
+        "fields": {
+            "tema": 1,
+            "texto": "El hedonismo o tendencia al placer puede ser una condici\u00f3n_______de \nproblema del exceso de consumo o materialismo. \nA. particular \nB. contextual \nC. objetiva."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 237,
+        "fields": {
+            "pregunta": 98,
+            "texto": "A. particular \nB. contextual \nC. objetiva.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 99,
+        "fields": {
+            "tema": 1,
+            "texto": "El modelo de estr\u00e9s psicosocial de Etapas en la socializaci\u00f3n de los adolescentes \nse encuentran en esta etapa: \na) Socializaci\u00f3n enfrentada con sociabilidad \nb) Sociabilidad desplazada enfrentada a sociabilidad plena. \nc) Socializaci\u00f3n transversal."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 238,
+        "fields": {
+            "pregunta": 99,
+            "texto": "c) Socializaci\u00f3n transversal.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 100,
+        "fields": {
+            "tema": 1,
+            "texto": "En el video visto en clases titulado \u201cestatus y salud\u201d cuando se habla de \ngradiante social inverso se refieren a. \na) La pobreza es un absoluto, de manera que niveles de pobreza muy extremos repercute \nviablemente sobre la salud, siendo lo m\u00e1s importante los ingresos netos. \nb) Las personas que tienen un estatus m\u00e1s alto tienen un mayor riesgo de sufrir un \ninfarto de miocardio en comparaci\u00f3n con los que tienen un estatus m\u00e1s bajo. \nc) Cuanto mayor sea la posici\u00f3n que una ocupa en la jerarqu\u00eda social, menor ser\u00e1 la \nprobabilidad de enfermar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 239,
+        "fields": {
+            "pregunta": 100,
+            "texto": "a) La pobreza es un absoluto, de manera que niveles de pobreza muy extremos repercute \nviablemente sobre la salud, siendo lo m\u00e1s importante los ingresos netos. \nb) Las personas que tienen un estatus m\u00e1s alto tienen un mayor riesgo de sufrir un \ninfarto de miocardio en comparaci\u00f3n con los que tienen un estatus m\u00e1s bajo. \nc) Cuanto mayor sea la posici\u00f3n que una ocupa en la jerarqu\u00eda social, menor ser\u00e1 la \nprobabilidad de enfermar.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 101,
+        "fields": {
+            "tema": 1,
+            "texto": "El empowerment aplicado a nivel supraindividual se refiere a: \na. El individuo \nb. La participaci\u00f3n democr\u00e1tica en la vida de la comunidad \nc. Ambas son correctas"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 240,
+        "fields": {
+            "pregunta": 101,
+            "texto": "El individuo",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 241,
+        "fields": {
+            "pregunta": 101,
+            "texto": "La participaci\u00f3n democr\u00e1tica en la vida de la comunidad",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 242,
+        "fields": {
+            "pregunta": 101,
+            "texto": "Ambas son correctas",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 102,
+        "fields": {
+            "tema": 1,
+            "texto": "El rol del investigador comunitario se encuadra dentro del modelo: \na. de b\u00fasqueda \nb. de espera \nc. ninguno de los dos"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 243,
+        "fields": {
+            "pregunta": 102,
+            "texto": "de b\u00fasqueda",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 244,
+        "fields": {
+            "pregunta": 102,
+            "texto": "de espera",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 245,
+        "fields": {
+            "pregunta": 102,
+            "texto": "ninguno de los dos",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 103,
+        "fields": {
+            "tema": 1,
+            "texto": "Las demandas en servicios, los indicadores sociales y los datos epidemiol\u00f3gicos \nson fuentes de informaci\u00f3n para determinar \u00bfqu\u00e9 tipo de necesidades?  \na. percibidas \nb. expresadas \nc. normativas \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 16 | 17"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 246,
+        "fields": {
+            "pregunta": 103,
+            "texto": "percibidas",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 247,
+        "fields": {
+            "pregunta": 103,
+            "texto": "expresadas",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 248,
+        "fields": {
+            "pregunta": 103,
+            "texto": "normativas \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 16 | 17",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 104,
+        "fields": {
+            "tema": 1,
+            "texto": "Seg\u00fan el modelo de competencias (Albee, 1980; Costa y L\u00f3pez, 1983) la \nidentificaci\u00f3n y el cambio de contextos de alto riesgo se encuadra dentro de una de \nlas siguientes metas:  \na. desarrollo de recursos personales \nb. desarrollo de sistemas comunitarios competentes \nc. desarrollo y optimizaci\u00f3n del sistema de apoyo profesional"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 249,
+        "fields": {
+            "pregunta": 104,
+            "texto": "desarrollo de recursos personales",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 250,
+        "fields": {
+            "pregunta": 104,
+            "texto": "desarrollo de sistemas comunitarios competentes",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 251,
+        "fields": {
+            "pregunta": 104,
+            "texto": "desarrollo y optimizaci\u00f3n del sistema de apoyo profesional",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 105,
+        "fields": {
+            "tema": 1,
+            "texto": "La intervenci\u00f3n comunitaria persigue el cambio social \u00bfde qu\u00e9 tipo es? \na. espont\u00e1neo y natural \nb. intencional y racionalmente planificado \nc. intencional e imprevisible"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 252,
+        "fields": {
+            "pregunta": 105,
+            "texto": "espont\u00e1neo y natural",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 253,
+        "fields": {
+            "pregunta": 105,
+            "texto": "intencional y racionalmente planificado",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 254,
+        "fields": {
+            "pregunta": 105,
+            "texto": "intencional e imprevisible",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 106,
+        "fields": {
+            "tema": 1,
+            "texto": "\u00bfCu\u00e1l debe ser la primera fase de una intervenci\u00f3n comunitaria?  \na. la evaluaci\u00f3n de necesidades, de recursos y de programa \nb. la determinaci\u00f3n de objetivos \nc. la obtenci\u00f3n de recursos"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 255,
+        "fields": {
+            "pregunta": 106,
+            "texto": "la evaluaci\u00f3n de necesidades, de recursos y de programa",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 256,
+        "fields": {
+            "pregunta": 106,
+            "texto": "la determinaci\u00f3n de objetivos",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 257,
+        "fields": {
+            "pregunta": 106,
+            "texto": "la obtenci\u00f3n de recursos",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 107,
+        "fields": {
+            "tema": 1,
+            "texto": "La evaluaci\u00f3n que se aplica durante el desarrollo de un programa se \ndenomina: \na. evaluaci\u00f3n interna \nb. evaluaci\u00f3n sumativa \nc. evaluaci\u00f3n formativa"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 258,
+        "fields": {
+            "pregunta": 107,
+            "texto": "evaluaci\u00f3n interna",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 259,
+        "fields": {
+            "pregunta": 107,
+            "texto": "evaluaci\u00f3n sumativa",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 260,
+        "fields": {
+            "pregunta": 107,
+            "texto": "evaluaci\u00f3n formativa",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 108,
+        "fields": {
+            "tema": 1,
+            "texto": "La evaluaci\u00f3n de la eficacia es un tipo de evaluaci\u00f3n: \na. formativa y de resultados \nb. sumativa y econ\u00f3mica \nc. sumativa y de resultados"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 261,
+        "fields": {
+            "pregunta": 108,
+            "texto": "formativa y de resultados",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 262,
+        "fields": {
+            "pregunta": 108,
+            "texto": "sumativa y econ\u00f3mica",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 263,
+        "fields": {
+            "pregunta": 108,
+            "texto": "sumativa y de resultados",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 109,
+        "fields": {
+            "tema": 1,
+            "texto": "El uso de indicadores sociales como metodolog\u00eda en la investigaci\u00f3n de los \nproblemas comunitarios es un m\u00e9todo que implica: \na. bajo control sobre el fen\u00f3meno y moderada implicaci\u00f3n con la comunidad \nb. moderado grado de control sobre el fen\u00f3meno y baja implicaci\u00f3n con la comunidad \nc. bajo grado de control sobre el fen\u00f3meno y bajo grado de implicaci\u00f3n con la \ncomunidad"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 264,
+        "fields": {
+            "pregunta": 109,
+            "texto": "bajo control sobre el fen\u00f3meno y moderada implicaci\u00f3n con la comunidad",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 265,
+        "fields": {
+            "pregunta": 109,
+            "texto": "moderado grado de control sobre el fen\u00f3meno y baja implicaci\u00f3n con la comunidad",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 266,
+        "fields": {
+            "pregunta": 109,
+            "texto": "bajo grado de control sobre el fen\u00f3meno y bajo grado de implicaci\u00f3n con la \ncomunidad",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 110,
+        "fields": {
+            "tema": 1,
+            "texto": "Entre las estrategias de investigaci\u00f3n comunitaria las que conllevan un mayor \ngrado de implicaci\u00f3n con la comunidad son: \na. el experimento de campo y la simulaci\u00f3n \nb. la observaci\u00f3n participante, la investigaci\u00f3n-acci\u00f3n y la simulaci\u00f3n \nc. el experimento de campo, la observaci\u00f3n-participante y la investigaci\u00f3n-acci\u00f3n \n \n \n \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 17 | 17 \n \nPREGUNTAS DESARROLLO \nFebrero 2022:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 267,
+        "fields": {
+            "pregunta": 110,
+            "texto": "el experimento de campo y la simulaci\u00f3n",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 268,
+        "fields": {
+            "pregunta": 110,
+            "texto": "la observaci\u00f3n participante, la investigaci\u00f3n-acci\u00f3n y la simulaci\u00f3n",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 269,
+        "fields": {
+            "pregunta": 110,
+            "texto": "el experimento de campo, la observaci\u00f3n-participante y la investigaci\u00f3n-acci\u00f3n \n \n \n \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 17 | 17 \n \nPREGUNTAS DESARROLLO \nFebrero 2022:",
+            "es_correcta": false
+        }
+    }

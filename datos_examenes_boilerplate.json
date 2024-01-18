@@ -1,0 +1,122 @@
+[
+    {
+        "model": "examenes.asignatura",
+        "pk": 1,
+        "fields": {
+            "nombre": "Comunitaria"
+        }
+    },
+    {
+        "model": "examenes.tema",
+        "pk": 1,
+        "fields": {
+            "asignatura": 1,
+            "nombre": "Tema 1"
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 1,
+        "fields": {
+            "tema": 1,
+            "texto": "Las familias aglutinadas tienen l\u00edmites _______ entre los distintos subsistemas \n(parental, filial, etc.) que la componen."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 2,
+        "fields": {
+            "pregunta": 1,
+            "texto": "Semirr\u00edgidos",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 3,
+        "fields": {
+            "pregunta": 1,
+            "texto": "Difusos",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 4,
+        "fields": {
+            "pregunta": 1,
+            "texto": "Transversales",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 2,
+        "fields": {
+            "tema": 1,
+            "texto": "El ser humano es un sistema abierto. Para su desarrollo recibe de su medio \nf\u00edsico______y de su medio social_______ "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 6,
+        "fields": {
+            "pregunta": 2,
+            "texto": "Informaci\u00f3n/informaci\u00f3n",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 7,
+        "fields": {
+            "pregunta": 2,
+            "texto": "Informaci\u00f3n/ energ\u00eda",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 8,
+        "fields": {
+            "pregunta": 2,
+            "texto": "Energ\u00eda/informaci\u00f3n",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 3,
+        "fields": {
+            "tema": 1,
+            "texto": "El modelo de estr\u00e9s psicosocial de B. Dohrenwend postula que: "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 9,
+        "fields": {
+            "pregunta": 3,
+            "texto": "Los eventos vitales estresantes vienen determinados por la combinaci\u00f3n de las \ncaracter\u00edsticas psicol\u00f3gicas de las personas y por los elementos socio-ambientales.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 10,
+        "fields": {
+            "pregunta": 3,
+            "texto": "Ambas son correctas",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 11,
+        "fields": {
+            "pregunta": 3,
+            "texto": "La reacci\u00f3n transitoria de estr\u00e9s est\u00e1 influida por mediadores psicol\u00f3gicos y \nsituacionales.",
+            "es_correcta": true
+        }
+    }
+]

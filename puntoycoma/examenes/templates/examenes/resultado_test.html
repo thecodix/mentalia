@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado del Test</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .pregunta-container, .centrado {
+            border: 1px solid #ddd;
+            padding: 20px; /* Aumenta el padding */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            max-width: 600px; /* Establece un ancho máximo */
+            margin-left: auto;  /* Centra el bloque */
+            margin-right: auto; /* Centra el bloque */
+        }
+        .pregunta-texto, .respuesta-texto {
+            font-size: 1.2em;
+        }
+        .btn-radio {
+            text-align: left;
+            width: 100%; /* Hace que el botón ocupe todo el ancho */
+        }
+        .btn-radio input[type="radio"] {
+            display: none;
+        }
+        .btn-radio label {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .correcta { background-color: lightgreen; }
+        .incorrecta { background-color: lightcoral; }
+        .sin-responder { background-color: #e6e1ad; }
+        .btn-respuesta {
+            margin: 5px 0; /* Espaciado entre botones */
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            filtrarPreguntas('todas');
+        });
+    </script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Resultado del Test</h1>
+        <p>Porcentaje de aciertos: {{ porcentaje_aciertos }}%</p>
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="graficoBarras" style="max-width: 400px;"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="graficoTarta" style="max-width: 400px;"></canvas>
+            </div>
+        </div>
+           <script>
+                // Datos para los gráficos
+                var data = [{{ num_acertadas }}, {{ num_falladas }}, {{ num_no_contestadas }}];
+
+                // Gráfico de Barras
+                var ctxBarras = document.getElementById('graficoBarras').getContext('2d');
+                var graficoBarras = new Chart(ctxBarras, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Acertadas', 'Falladas', 'No Contestadas'],
+                        datasets: [{
+                            label: 'Número de Preguntas',
+                            data: data,
+                            backgroundColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)', 'rgba(255, 206, 86, 1)'],
+                            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)', 'rgba(255, 206, 86, 1)'],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        },
+                        animation: {
+                            onComplete: function() {
+                                var ctx = this.chart.ctx;
+                                ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, 'normal', Chart.defaults.global.defaultFontFamily);
+                                ctx.fillStyle = this.chart.config.options.defaultFontColor;
+                                ctx.textAlign = 'center';
+                                ctx.textBaseline = 'bottom';
+
+                                this.data.datasets.forEach(function(dataset) {
+                                    for (var i = 0; i < dataset.data.length; i++) {
+                                        var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                        ctx.fillText(dataset.data[i], model.x, model.y - 5);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+
+                // Gráfico de Tarta
+                var ctxTarta = document.getElementById('graficoTarta').getContext('2d');
+                var graficoTarta = new Chart(ctxTarta, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Acertadas', 'Falladas', 'No Contestadas'],
+                        datasets: [{
+                            data: data,
+                            backgroundColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)', 'rgba(255, 206, 86, 1)'],
+                            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)', 'rgba(255, 206, 86, 1)'],
+                        }]
+                    },
+                    options: {
+                        // otras opciones...
+                        animation: {
+                            onComplete: function() {
+                                var ctx = this.chart.ctx;
+                                ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, 'normal', Chart.defaults.global.defaultFontFamily);
+                                ctx.fillStyle = this.chart.config.options.defaultFontColor;
+                                ctx.textAlign = 'center';
+                                ctx.textBaseline = 'middle';
+
+                                this.data.datasets.forEach(function(dataset) {
+                                    for (var i = 0; i < dataset.data.length; i++) {
+                                        var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                        var mid_radius = model.innerRadius + (model.outerRadius - model.innerRadius) / 2;
+                                        var start_angle = model.startAngle;
+                                        var end_angle = model.endAngle;
+                                        var mid_angle = start_angle + (end_angle - start_angle) / 2;
+
+                                        var x = mid_radius * Math.cos(mid_angle);
+                                        var y = mid_radius * Math.sin(mid_angle);
+
+                                        ctx.fillText(dataset.data[i], model.x + x, model.y + y);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+            </script>
+            <script>
+                function filtrarPreguntas(filtro) {
+                    var todasLasPreguntas = document.querySelectorAll('.pregunta-container');
+
+                    todasLasPreguntas.forEach(function(pregunta) {
+                        switch (filtro) {
+                            case 'todas':
+                                pregunta.style.display = '';
+                                break;
+                            case 'acertadas':
+                                pregunta.style.display = pregunta.classList.contains('acertadas') ? '' : 'none';
+                                break;
+                            case 'falladas':
+                                pregunta.style.display = pregunta.classList.contains('falladas') ? '' : 'none';
+                                break;
+                            case 'no-contestadas':
+                                pregunta.style.display = pregunta.classList.contains('no-contestadas') ? '' : 'none';
+                                break;
+                        }
+                    });
+                }
+            </script>
+        <div class="centrado">
+            <div class="btn-group" role="group" aria-label="Filtros de Pregunta">
+                <button type="button" class="btn btn-secondary" onclick="filtrarPreguntas('todas')">Todas</button>
+                <button type="button" class="btn btn-success" onclick="filtrarPreguntas('acertadas')">Acertadas ({{ num_acertadas }})</button>
+                <button type="button" class="btn btn-danger" onclick="filtrarPreguntas('falladas')">Falladas ({{ num_falladas }})</button>
+                <button type="button" class="btn btn-info" onclick="filtrarPreguntas('no-contestadas')">No Contestadas ({{ num_no_contestadas }})</button>
+            </div>
+        </div>
+        {% for item in preguntas_y_respuestas %}
+            <div class="pregunta-container {% if item.seleccionada == item.correcta %}acertadas{% elif item.seleccionada and item.seleccionada != item.correcta %}falladas{% else %}no-contestadas{% endif %}">
+                <p class="pregunta-texto">{{ item.pregunta.texto }}</p>
+                {% for opcion in item.pregunta.opcionderespuesta_set.all %}
+                <div class="btn-radio">
+                    <label class="btn-radio {% if opcion == item.seleccionada and opcion == item.correcta %}correcta{% elif opcion == item.seleccionada %}incorrecta{% elif opcion == item.correcta %}sin-responder{% endif %}">
+                        {{ opcion.texto }}
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
