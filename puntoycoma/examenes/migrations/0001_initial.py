@@ -54,10 +54,17 @@ class Migration(migrations.Migration):
             name='TestRealizado',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('asignatura', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='examenes.asignatura')),
                 ('fecha', models.DateTimeField(auto_now_add=True)),
                 ('preguntas_correctas', models.IntegerField()),
-                ('preguntas_totales', models.IntegerField()),
-                ('usuario', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('preguntas_falladas', models.IntegerField()),
+                ('preguntas_no_contestadas', models.IntegerField()),
+                ('total_preguntas', models.IntegerField()),
             ],
+        ),
+        migrations.AddField(
+            model_name='TestRealizado',
+            name='tema',
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='examenes.tema'),
         ),
     ]

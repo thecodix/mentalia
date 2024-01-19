@@ -48,6 +48,7 @@
     </script>
 </head>
 <body>
+    {% include 'examenes/navbar.html' %}
     <div class="container mt-4">
         <h1 class="text-center">Resultado del Test</h1>
         <p>Porcentaje de aciertos: {{ porcentaje_aciertos }}%</p>
@@ -148,19 +149,10 @@
                     var todasLasPreguntas = document.querySelectorAll('.pregunta-container');
 
                     todasLasPreguntas.forEach(function(pregunta) {
-                        switch (filtro) {
-                            case 'todas':
-                                pregunta.style.display = '';
-                                break;
-                            case 'acertadas':
-                                pregunta.style.display = pregunta.classList.contains('acertadas') ? '' : 'none';
-                                break;
-                            case 'falladas':
-                                pregunta.style.display = pregunta.classList.contains('falladas') ? '' : 'none';
-                                break;
-                            case 'no-contestadas':
-                                pregunta.style.display = pregunta.classList.contains('no-contestadas') ? '' : 'none';
-                                break;
+                        if (filtro === 'todas') {
+                            pregunta.style.display = 'block'; // O el estilo de display que estés utilizando
+                        } else {
+                            pregunta.style.display = pregunta.classList.contains(filtro) ? 'block' : 'none';
                         }
                     });
                 }
@@ -175,7 +167,7 @@
         </div>
         {% for item in preguntas_y_respuestas %}
             <div class="pregunta-container {% if item.seleccionada == item.correcta %}acertadas{% elif item.seleccionada and item.seleccionada != item.correcta %}falladas{% else %}no-contestadas{% endif %}">
-                <p class="pregunta-texto">{{ item.pregunta.texto }}</p>
+                <p class="pregunta-texto">Pregunta {{ forloop.counter }}: {{ item.pregunta.texto }}</p>
                 {% for opcion in item.pregunta.opcionderespuesta_set.all %}
                 <div class="btn-radio">
                     <label class="btn-radio {% if opcion == item.seleccionada and opcion == item.correcta %}correcta{% elif opcion == item.seleccionada %}incorrecta{% elif opcion == item.correcta %}sin-responder{% endif %}">

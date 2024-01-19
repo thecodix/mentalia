@@ -30,7 +30,22 @@ class OpcionDeRespuesta(models.Model):
         return f"({self.pregunta.id}) [{self.es_correcta}] - {self.texto[:25]}"
 
 class TestRealizado(models.Model):
-    usuario = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     fecha = models.DateTimeField(auto_now_add=True)
+    asignatura = models.ForeignKey('Asignatura', on_delete=models.SET_NULL, null=True)
+    tema = models.ForeignKey('Tema', on_delete=models.SET_NULL, null=True)
     preguntas_correctas = models.IntegerField()
-    preguntas_totales = models.IntegerField()
+    preguntas_falladas = models.IntegerField()
+    preguntas_no_contestadas = models.IntegerField()
+    total_preguntas = models.IntegerField()
+
+    def obtener_preguntas_y_respuestas(self):
+        return RespuestaTest.objects.filter(test_realizado=self).select_related('pregunta', 'respuesta_seleccionada')
+
+
+class RespuestaTest(models.Model):
+    test_realizado = models.ForeignKey(TestRealizado, on_delete=models.CASCADE)
+    pregunta = models.ForeignKey(Pregunta, on_delete=models.CASCADE)
+    respuesta_seleccionada = models.ForeignKey(OpcionDeRespuesta, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ['test_realizado', 'pregunta', 'respuesta_seleccionada']

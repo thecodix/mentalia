@@ -12,7 +12,7 @@
         "pk": 229,
         "fields": {
             "pregunta": 93,
-            "texto": "",
+            "texto": "Negativo, Subjetivo, Normativos",
             "es_correcta": false
         }
     },
@@ -21,8 +21,8 @@
         "pk": 318,
         "fields": {
             "pregunta": 93,
-            "texto": "",
-            "es_correcta": false
+            "texto": "Negativo, objetivo, comparativos",
+            "es_correcta": true
         }
     },
     {
@@ -30,7 +30,7 @@
         "pk": 319,
         "fields": {
             "pregunta": 93,
-            "texto": "",
+            "texto": "Positivo, subjetivo, comparativos",
             "es_correcta": false
         }
     },
@@ -39,7 +39,7 @@
         "pk": 94,
         "fields": {
             "tema": 1,
-            "texto": "la investigaci\u00f3n que involucra la interacci\u00f3n entre el investigador y \nlos informantes durante el transcurso de la cual se recogen datos de \nmanera sistem\u00e1tica y no instructiva se corresponde: \u00bfcon cu\u00e1l de las \nsiguientes estrategias? \na) Observaci\u00f3n participantes. \nb) An\u00e1lisis de redes sociales. \nc) Aproximaci\u00f3n etnogr\u00e1fica."
+            "texto": "la investigaci\u00f3n que involucra la interacci\u00f3n entre el investigador y \nlos informantes durante el transcurso de la cual se recogen datos de \nmanera sistem\u00e1tica y no instructiva se corresponde:"
         }
     },
     {
@@ -47,7 +47,25 @@
         "pk": 230,
         "fields": {
             "pregunta": 94,
-            "texto": "b) An\u00e1lisis de redes sociales. \nc) Aproximaci\u00f3n etnogr\u00e1fica.",
+            "texto": "Observación participante",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 320,
+        "fields": {
+            "pregunta": 94,
+            "texto": "An\u00e1lisis de redes sociales",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 321,
+        "fields": {
+            "pregunta": 94,
+            "texto": "Aproximaci\u00f3n etnogr\u00e1fica.",
             "es_correcta": false
         }
     },
@@ -56,16 +74,7 @@
         "pk": 95,
         "fields": {
             "tema": 1,
-            "texto": "Espa\u00f1a es uno de los pa\u00edses en los que m\u00e1s personas son atropelladas por \ncruzar la calzada por un lugar distinto al paso de peatones. Esto es un ejemplo de \n_______ que favorece el problema de los accidentes de tr\u00e1fico. \na. posici\u00f3n \nb. contexto \nc. situaci\u00f3n."
-        }
-    },
-    {
-        "model": "examenes.opcionderespuesta",
-        "pk": 231,
-        "fields": {
-            "pregunta": 95,
-            "texto": "Esto es un ejemplo de \n_______ que favorece el problema de los accidentes de tr\u00e1fico.",
-            "es_correcta": false
+            "texto": "Espa\u00f1a es uno de los pa\u00edses en los que m\u00e1s personas son atropelladas por \ncruzar la calzada por un lugar distinto al paso de peatones."
         }
     },
     {
@@ -92,7 +101,7 @@
         "fields": {
             "pregunta": 95,
             "texto": "situaci\u00f3n.",
-            "es_correcta": false
+            "es_correcta": true
         }
     },
     {
@@ -108,7 +117,25 @@
         "pk": 235,
         "fields": {
             "pregunta": 96,
-            "texto": "Cuando el acosador recibe una valoraci\u00f3n positiva por parte de \nsus amigos por su conducta violenta contra un compa\u00f1ero de clase, se est\u00e1 \nproduciendo una incompatibilidad de los significados que se asocian a la conducta \nviolenta desde : \na) el texto y el supracontexto \nb) el texto y el propio sujeto \nc) el supracontexto y la familia. \n \na64b0469ff35958ef4ab887a898bd50bdfbbe91a-6473789\nLas descargas sin publicidad se realizan con las coins\nReservados todos los derechos. No se permite la explotaci\u00f3n econ\u00f3mica ni la transformaci\u00f3n de esta obra. Queda permitida la impresi\u00f3n en su totalidad.\nIntervenci\u00f3n Social y Comunitaria          \n \nP\u00e1gina 15 | 17",
+            "texto": "El texto y el supracontexto",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 322,
+        "fields": {
+            "pregunta": 96,
+            "texto": "El texto y el propio sujeto",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 323,
+        "fields": {
+            "pregunta": 96,
+            "texto": "El supracontexto y la familia",
             "es_correcta": false
         }
     },

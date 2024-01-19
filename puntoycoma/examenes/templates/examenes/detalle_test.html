@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle del Test</title>
+    <!-- Incluir Bootstrap o cualquier otro CSS si es necesario -->
+</head>
+<body>
+    <div class="container">
+        <h1>Detalle del Test Realizado</h1>
+        <p>Asignatura: {{ test.asignatura.nombre }}</p>
+        <p>Tema: {{ test.tema.nombre }}</p>
+        <p>Fecha: {{ test.fecha }}</p>
+        <!-- Mostrar detalles de las preguntas y respuestas -->
+        {% for item in preguntas_y_respuestas %}
+            <div>
+                <p>Pregunta: {{ item.pregunta.texto }}</p>
+                <p>Respuesta Seleccionada: {{ item.respuesta_seleccionada.texto }}</p>
+                <p>Respuesta Correcta: {{ item.respuesta_correcta.texto }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
