@@ -2,22 +2,91 @@
 <html>
 <head>
     <title>Detalle del Test</title>
-    <!-- Incluir Bootstrap o cualquier otro CSS si es necesario -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .pregunta-container, .centrado {
+            border: 1px solid #ddd;
+            padding: 20px; /* Aumenta el padding */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            max-width: 600px; /* Establece un ancho máximo */
+            margin-left: auto;  /* Centra el bloque */
+            margin-right: auto; /* Centra el bloque */
+        }
+        .pregunta-texto, .respuesta-texto {
+            font-size: 1.2em;
+        }
+        .btn-radio {
+            text-align: left;
+            width: 100%; /* Hace que el botón ocupe todo el ancho */
+        }
+        .btn-radio input[type="radio"] {
+            display: none;
+        }
+        .btn-radio label {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .correcta { background-color: lightgreen; }
+        .incorrecta { background-color: lightcoral; }
+        .sin-responder { background-color: #e6e1ad; }
+        .btn-respuesta {
+            margin: 5px 0; /* Espaciado entre botones */
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            filtrarPreguntas('todas');
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Detalle del Test Realizado</h1>
-        <p>Asignatura: {{ test.asignatura.nombre }}</p>
-        <p>Tema: {{ test.tema.nombre }}</p>
-        <p>Fecha: {{ test.fecha }}</p>
-        <!-- Mostrar detalles de las preguntas y respuestas -->
-        {% for item in preguntas_y_respuestas %}
-            <div>
-                <p>Pregunta: {{ item.pregunta.texto }}</p>
-                <p>Respuesta Seleccionada: {{ item.respuesta_seleccionada.texto }}</p>
-                <p>Respuesta Correcta: {{ item.respuesta_correcta.texto }}</p>
+    {% include 'examenes/navbar.html' %}
+    <div class="container mt-4">
+        <h1 class="text-center">Detalle del Test</h1>
+        <p class="text-center">Asignatura: {{ test.asignatura.nombre }}</p>
+        <p class="text-center">Tema: {{ test.tema.nombre }}</p>
+        <p class="text-center">Fecha: {{ test.fecha }}</p>
+        <div class="centrado">
+            <div class="btn-group" role="group" aria-label="Filtros de Pregunta">
+                <button type="button" class="btn btn-secondary" onclick="filtrarPreguntas('todas')">Todas</button>
+                <button type="button" class="btn btn-success" onclick="filtrarPreguntas('acertadas')">Acertadas ({{ stats.num_acertadas }})</button>
+                <button type="button" class="btn btn-danger" onclick="filtrarPreguntas('falladas')">Falladas ({{ stats.num_falladas }})</button>
+                <button type="button" class="btn btn-info" onclick="filtrarPreguntas('no-contestadas')">No Contestadas ({{ stats.num_no_contestadas }})</button>
+            </div>
+        </div>
+        {% for item in detalle_test %}
+            <div class="pregunta-container {% if item.seleccionada == item.correcta %}acertadas{% elif item.seleccionada and item.seleccionada != item.correcta %}falladas{% else %}no-contestadas{% endif %}">
+                <p class="pregunta-texto">Pregunta {{ forloop.counter }}: {{ item.pregunta.texto }}</p>
+                {% for opcion in item.pregunta.opcionderespuesta_set.all %}
+                <div class="btn-radio">
+                    <label class="{% if opcion == item.seleccionada and opcion == item.correcta %}correcta{% elif opcion == item.seleccionada %}incorrecta{% elif opcion == item.correcta %}sin-responder{% endif %}">
+                        {{ opcion.texto }}
+                    </label>
+                </div>
+                {% endfor %}
             </div>
         {% endfor %}
     </div>
+    <script>
+        function filtrarPreguntas(filtro) {
+            var todasLasPreguntas = document.querySelectorAll('.pregunta-container');
+
+            todasLasPreguntas.forEach(function(pregunta) {
+                if (filtro === 'todas') {
+                    pregunta.style.display = 'block'; // O el estilo de display que estés utilizando
+                } else {
+                    pregunta.style.display = pregunta.classList.contains(filtro) ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>

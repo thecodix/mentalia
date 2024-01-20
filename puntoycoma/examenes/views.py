@@ -4,7 +4,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 
-from .models import Pregunta, Asignatura, Tema, TestRealizado, RespuestaTest
+from .models import Pregunta, Asignatura, Tema, TestRealizado, RespuestaTest, OpcionDeRespuesta
 
 
 def index(request):
@@ -43,7 +43,7 @@ def submit_test(request):
                 pregunta = Pregunta.objects.get(id=pregunta_id)
                 respuesta_correcta = pregunta.opcionderespuesta_set.get(es_correcta=True)
                 respuesta_seleccionada_id = value if value.isdigit() else None
-                respuesta_seleccionada = None
+                respuesta_seleccionada = OpcionDeRespuesta.objects.get(id=respuesta_seleccionada_id) if respuesta_seleccionada_id else None
                 if value == 'no_contestada':
                     respuestas_no_contestadas += 1
                     preguntas_y_respuestas.append({
@@ -110,9 +110,14 @@ def historico_tests(request):
 def detalle_test(request, test_id):
     test = get_object_or_404(TestRealizado, id=test_id)
     # Suponiendo que tienes una forma de obtener las preguntas y respuestas relacionadas con este test
-    preguntas_y_respuestas = test.obtener_preguntas_y_respuestas()
+    # preguntas_y_respuestas = test.obtener_preguntas_y_respuestas()
+    detalle_test, stats = test.obtener_detalle_test()
+
+
 
     return render(request, 'examenes/detalle_test.html', {
         'test': test,
-        'preguntas_y_respuestas': preguntas_y_respuestas
+        # 'preguntas_y_respuestas': preguntas_y_respuestas
+        'detalle_test': detalle_test,
+        'stats': stats,
     })
