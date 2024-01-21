@@ -1,12 +1,29 @@
 from django.db import models
 from django.conf import settings
 
-# Create your models here.
-class Asignatura(models.Model):
+
+class Carrera(models.Model):
     nombre = models.CharField(max_length=100)
 
     def __str__(self):
         return self.nombre
+
+
+class Curso(models.Model):
+    nombre = models.CharField(max_length=100)
+    carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE, related_name='cursos')
+
+    def __str__(self):
+        return self.nombre
+
+
+class Asignatura(models.Model):
+    nombre = models.CharField(max_length=100)
+    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nombre
+
 
 class Tema(models.Model):
     asignatura = models.ForeignKey(Asignatura, on_delete=models.CASCADE)
@@ -14,6 +31,7 @@ class Tema(models.Model):
 
     def __str__(self):
         return self.nombre
+
 
 class Pregunta(models.Model):
     tema = models.ForeignKey(Tema, on_delete=models.CASCADE)

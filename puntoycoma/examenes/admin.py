@@ -1,13 +1,15 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Asignatura, Tema, Pregunta, OpcionDeRespuesta, TestRealizado
+from .models import Carrera, Curso, Asignatura, Tema, Pregunta, OpcionDeRespuesta, TestRealizado
 
 # admin.site.register(Asignatura)
 # admin.site.register(Tema)
 # admin.site.register(Pregunta)
 # admin.site.register(OpcionDeRespuesta)
 admin.site.register(TestRealizado)
+admin.site.register(Carrera)
+admin.site.register(Curso)
 
 
 @admin.register(Asignatura)

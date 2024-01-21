@@ -9,7 +9,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 
-from .models import Pregunta, Asignatura, Tema, TestRealizado, RespuestaTest, OpcionDeRespuesta
+from .models import Carrera, Curso, Pregunta, Asignatura, Tema, TestRealizado, RespuestaTest, OpcionDeRespuesta
 
 
 def register(request):
@@ -29,10 +29,12 @@ def register(request):
 
 @login_required
 def index(request):
+    carreras = Carrera.objects.all()
+    cursos = Curso.objects.all()
     asignaturas = Asignatura.objects.all()
     temas = Tema.objects.all()
     numero_preguntas_opciones = [1, 5, 15, 20, 30]
-    return render(request, 'examenes/index.html', {'asignaturas': asignaturas, 'temas': temas, 'numero_preguntas_opciones': numero_preguntas_opciones})
+    return render(request, 'examenes/index.html', {'carreras': carreras, 'cursos': cursos, 'asignaturas': asignaturas, 'temas': temas, 'numero_preguntas_opciones': numero_preguntas_opciones})
 
 
 @login_required
@@ -134,17 +136,22 @@ def historico_tests(request):
 
 @login_required
 def detalle_test(request, test_id):
-    test = get_object_or_404(TestRealizado, id=test_id)
+    user_test = get_object_or_404(TestRealizado, id=test_id)
+
+    # Verificar si el test pertenece al usuario logueado
+    if user_test.usuario != request.user:
+        user_can_view = False
+    else:
+        user_can_view = True
     # Suponiendo que tienes una forma de obtener las preguntas y respuestas relacionadas con este test
     # preguntas_y_respuestas = test.obtener_preguntas_y_respuestas()
-    detalle_test, stats = test.obtener_detalle_test()
-
-
+    detalles, stats = user_test.obtener_detalle_test()
 
     return render(request, 'examenes/detalle_test.html', {
-        'test': test,
+        'user_can_view': user_can_view,
+        'test': user_test,
         # 'preguntas_y_respuestas': preguntas_y_respuestas
-        'detalle_test': detalle_test,
+        'detalle_test': detalles,
         'stats': stats,
     })
 

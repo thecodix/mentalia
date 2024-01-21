@@ -7,19 +7,35 @@ def cargar_datos(apps, schema_editor):
         data = json.load(file)
 
     # Obtener los modelos
+    Carrera = apps.get_model('examenes', 'Carrera')
+    Curso = apps.get_model('examenes', 'Curso')
     Asignatura = apps.get_model('examenes', 'Asignatura')
     Tema = apps.get_model('examenes', 'Tema')
     Pregunta = apps.get_model('examenes', 'Pregunta')
     OpcionDeRespuesta = apps.get_model('examenes', 'OpcionDeRespuesta')
 
     # Diccionarios para almacenar las instancias creadas
+    carreras = {}
+    cursos = {}
     asignaturas = {}
     temas = {}
     preguntas = {}
 
     for entry in data:
+        if entry['model'] == 'examenes.carrera':
+            carrera = Carrera.objects.create(**entry['fields'])
+            carreras[entry['pk']] = carrera
+
+        if entry['model'] == 'examenes.curso':
+            fields = entry['fields']
+            fields['carrera'] = carreras[fields['carrera']]
+            curso = Curso.objects.create(**fields)
+            cursos[entry['pk']] = curso
+
         if entry['model'] == 'examenes.asignatura':
-            asignatura = Asignatura.objects.create(**entry['fields'])
+            fields = entry['fields']
+            fields['curso'] = cursos[fields['curso']]
+            asignatura = Asignatura.objects.create(**fields)
             asignaturas[entry['pk']] = asignatura
 
         elif entry['model'] == 'examenes.tema':

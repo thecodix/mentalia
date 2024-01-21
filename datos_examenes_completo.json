@@ -1,8 +1,24 @@
 [
     {
+        "model": "examenes.carrera",
+        "pk": 1,
+        "fields": {
+            "nombre": "Psicología"
+        }
+    },
+    {
+        "model": "examenes.curso",
+        "pk": 1,
+        "fields": {
+            "nombre": "Tercero",
+            "carrera": 1
+        }
+    },
+    {
         "model": "examenes.asignatura",
         "pk": 1,
         "fields": {
+            "curso": 1,
             "nombre": "Comunitaria"
         }
     },

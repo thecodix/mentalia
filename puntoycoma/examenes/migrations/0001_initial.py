@@ -15,10 +15,27 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='Carrera',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('nombre', models.CharField(max_length=100)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Curso',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('nombre', models.CharField(max_length=100)),
+                ('carrera', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='cursos', to='examenes.carrera')),
+            ],
+        ),
+        migrations.CreateModel(
             name='Asignatura',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(max_length=100)),
+                ('curso', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='examenes.curso')),
+
             ],
         ),
         migrations.CreateModel(

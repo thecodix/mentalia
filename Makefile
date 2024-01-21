@@ -5,6 +5,9 @@ make-migrate:
 	@docker exec -it puntoycoma-web-1 ./manage.py makemigrations examenes
 	@#docker exec -it puntoycoma-web-1 ./manage.py migrate
 
+migrate:
+	docker exec -it puntoycoma-web-1 ./manage.py migrate
+
 superuser:
 	@docker exec -it puntoycoma-web-1 ./manage.py createsuperuser
 
@@ -12,7 +15,7 @@ empty-migration:
 	python manage.py makemigrations examenes --empty
 
 dump-data:
-	@docker exec -it puntoycoma-web-1 ./manage.py dumpdata examenes > datos_examenes.json
+	docker exec -it puntoycoma-web-1 ./manage.py dumpdata examenes > datos_examenes.json
 
 
 restore-data:
