@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
 class Asignatura(models.Model):
@@ -29,10 +30,12 @@ class OpcionDeRespuesta(models.Model):
     def __str__(self):
         return f"({self.pregunta.id}) [{self.es_correcta}] - {self.texto[:25]}"
 
+
 class TestRealizado(models.Model):
     fecha = models.DateTimeField(auto_now_add=True)
     asignatura = models.ForeignKey('Asignatura', on_delete=models.SET_NULL, null=True)
     tema = models.ForeignKey('Tema', on_delete=models.SET_NULL, null=True)
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     preguntas_correctas = models.IntegerField()
     preguntas_falladas = models.IntegerField()
     preguntas_no_contestadas = models.IntegerField()

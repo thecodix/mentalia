@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .centrado {
+            border: 1px solid #ddd;
+            padding: 20px; /* Aumenta el padding */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            max-width: 600px; /* Establece un ancho máximo */
+            margin-left: auto;  /* Centra el bloque */
+            margin-right: auto; /* Centra el bloque */
+        }
+        .btn-radio {
+            text-align: left;
+            width: 100%; /* Hace que el botón ocupe todo el ancho */
+        }
+        .btn-radio label {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="centrado">
+            <h2 class="text-center">Iniciar Sesión</h2>
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="{% url 'register' %}">Regístrate</a></p>
+        </div>
+    </div>
+</body>
+</html>

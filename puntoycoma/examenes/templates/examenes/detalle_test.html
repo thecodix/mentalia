@@ -50,30 +50,34 @@
 <body>
     {% include 'examenes/navbar.html' %}
     <div class="container mt-4">
-        <h1 class="text-center">Detalle del Test</h1>
-        <p class="text-center">Asignatura: {{ test.asignatura.nombre }}</p>
-        <p class="text-center">Tema: {{ test.tema.nombre }}</p>
-        <p class="text-center">Fecha: {{ test.fecha }}</p>
-        <div class="centrado">
-            <div class="btn-group" role="group" aria-label="Filtros de Pregunta">
-                <button type="button" class="btn btn-secondary" onclick="filtrarPreguntas('todas')">Todas</button>
-                <button type="button" class="btn btn-success" onclick="filtrarPreguntas('acertadas')">Acertadas ({{ stats.num_acertadas }})</button>
-                <button type="button" class="btn btn-danger" onclick="filtrarPreguntas('falladas')">Falladas ({{ stats.num_falladas }})</button>
-                <button type="button" class="btn btn-info" onclick="filtrarPreguntas('no-contestadas')">No Contestadas ({{ stats.num_no_contestadas }})</button>
-            </div>
-        </div>
-        {% for item in detalle_test %}
-            <div class="pregunta-container {% if item.seleccionada == item.correcta %}acertadas{% elif item.seleccionada and item.seleccionada != item.correcta %}falladas{% else %}no-contestadas{% endif %}">
-                <p class="pregunta-texto">Pregunta {{ forloop.counter }}: {{ item.pregunta.texto }}</p>
-                {% for opcion in item.pregunta.opcionderespuesta_set.all %}
-                <div class="btn-radio">
-                    <label class="{% if opcion == item.seleccionada and opcion == item.correcta %}correcta{% elif opcion == item.seleccionada %}incorrecta{% elif opcion == item.correcta %}sin-responder{% endif %}">
-                        {{ opcion.texto }}
-                    </label>
+        {% if user_can_view %}
+            <h1 class="text-center">Detalle del Test</h1>
+            <p class="text-center">Asignatura: {{ test.asignatura.nombre }}</p>
+            <p class="text-center">Tema: {{ test.tema.nombre }}</p>
+            <p class="text-center">Fecha: {{ test.fecha }}</p>
+            <div class="centrado">
+                <div class="btn-group" role="group" aria-label="Filtros de Pregunta">
+                    <button type="button" class="btn btn-secondary" onclick="filtrarPreguntas('todas')">Todas</button>
+                    <button type="button" class="btn btn-success" onclick="filtrarPreguntas('acertadas')">Acertadas ({{ stats.num_acertadas }})</button>
+                    <button type="button" class="btn btn-danger" onclick="filtrarPreguntas('falladas')">Falladas ({{ stats.num_falladas }})</button>
+                    <button type="button" class="btn btn-info" onclick="filtrarPreguntas('no-contestadas')">No Contestadas ({{ stats.num_no_contestadas }})</button>
                 </div>
-                {% endfor %}
             </div>
-        {% endfor %}
+            {% for item in detalle_test %}
+                <div class="pregunta-container {% if item.seleccionada == item.correcta %}acertadas{% elif item.seleccionada and item.seleccionada != item.correcta %}falladas{% else %}no-contestadas{% endif %}">
+                    <p class="pregunta-texto">Pregunta {{ forloop.counter }}: {{ item.pregunta.texto }}</p>
+                    {% for opcion in item.pregunta.opcionderespuesta_set.all %}
+                    <div class="btn-radio">
+                        <label class="{% if opcion == item.seleccionada and opcion == item.correcta %}correcta{% elif opcion == item.seleccionada %}incorrecta{% elif opcion == item.correcta %}sin-responder{% endif %}">
+                            {{ opcion.texto }}
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No tienes permiso para ver los detalles de este test.</p>
+        {% endif %}
     </div>
     <script>
         function filtrarPreguntas(filtro) {

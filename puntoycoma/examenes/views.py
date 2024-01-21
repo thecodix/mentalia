@@ -1,5 +1,10 @@
 import random
 
+from django.contrib.auth import logout
+
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
 from django.contrib.admin.views.decorators import staff_member_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
@@ -7,6 +12,22 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Pregunta, Asignatura, Tema, TestRealizado, RespuestaTest, OpcionDeRespuesta
 
 
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('index')  # Redirigir a la página principal tras el registro
+    else:
+        form = UserCreationForm()
+    return render(request, 'examenes/register.html', {'form': form})
+
+
+@login_required
 def index(request):
     asignaturas = Asignatura.objects.all()
     temas = Tema.objects.all()
@@ -14,8 +35,10 @@ def index(request):
     return render(request, 'examenes/index.html', {'asignaturas': asignaturas, 'temas': temas, 'numero_preguntas_opciones': numero_preguntas_opciones})
 
 
+@login_required
 def test(request):
-    numero_preguntas = request.GET.get('numero_preguntas')
+    numero_preguntas = request.GET.get('numero_preguntas') or '1'
+
     # Asumiendo que el tema se pasa como un parámetro GET
     tema_id = request.GET.get('tema')
     preguntas = list(Pregunta.objects.filter(tema_id=tema_id))
@@ -23,9 +46,10 @@ def test(request):
     return render(request, 'examenes/test.html', {'preguntas': preguntas_seleccionadas})
 
 
+@login_required
 def submit_test(request):
     if request.method == 'POST':
-        test_realizado = TestRealizado()
+        test_realizado = TestRealizado(usuario=request.user)
         test_realizado.preguntas_correctas = 0
         test_realizado.preguntas_falladas = 0
         test_realizado.preguntas_no_contestadas = 0
@@ -102,11 +126,13 @@ def preguntas_por_tema(request, tema_id):
     return render(request, 'admin/preguntas_por_tema.html', {'preguntas': preguntas})
 
 
+@login_required
 def historico_tests(request):
-    tests_realizados = TestRealizado.objects.all().order_by('-fecha')  # Ordena por fecha, los más recientes primero
+    tests_realizados = TestRealizado.objects.filter(usuario=request.user).order_by('-fecha')  # Ordena por fecha, los más recientes primero
     return render(request, 'examenes/historico_tests.html', {'tests_realizados': tests_realizados})
 
 
+@login_required
 def detalle_test(request, test_id):
     test = get_object_or_404(TestRealizado, id=test_id)
     # Suponiendo que tienes una forma de obtener las preguntas y respuestas relacionadas con este test
@@ -121,3 +147,12 @@ def detalle_test(request, test_id):
         'detalle_test': detalle_test,
         'stats': stats,
     })
+
+
+def custom_logout(request):
+    logout(request)
+    return redirect('thank_you')  # Nombre de la URL de la página de agradecimiento
+
+
+def thank_you(request):
+    return render(request, 'examenes/thank_you.html')
