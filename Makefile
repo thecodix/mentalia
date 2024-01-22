@@ -1,9 +1,8 @@
 
 
 
-make-migrate:
+makemigrations:
 	@docker exec -it puntoycoma-web-1 ./manage.py makemigrations examenes
-	@#docker exec -it puntoycoma-web-1 ./manage.py migrate
 
 migrate:
 	docker exec -it puntoycoma-web-1 ./manage.py migrate
@@ -31,3 +30,9 @@ restart:
 	docker compose build
 	docker compose up -d
 	make restore-data
+
+
+isort:
+	@docker exec -it puntoycoma-web-1 sh -c "isort ."
+
+.PHONY: isort
