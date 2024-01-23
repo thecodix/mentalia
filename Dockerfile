@@ -1,17 +1,23 @@
 # Usa una imagen oficial de Python como imagen base
 FROM python:3.12
 
+# Set the current working directory to root
+WORKDIR /
+
+# Copy the data file to the root directory of the container
+COPY datos_examenes_completo.json .
+
 # Establece un directorio de trabajo
-WORKDIR /mentalia
+ARG APP_HOME=/app
+WORKDIR $APP_HOME
 
 # Copia los archivos de requisitos y los instala
-COPY requirements.txt /mentalia/
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copia el resto del código fuente de la aplicación
-COPY app/ /mentalia/
+COPY . .
 
-COPY datos_examenes_completo.json /mentalia/datos_examenes_completo.json
 
 # Expone el puerto que Django utilizará
 EXPOSE 8007
