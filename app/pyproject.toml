@@ -15,8 +15,11 @@ load-plugins = ["pylint_django"]
 
 [tool.pylint.MASTER]
 # Pylint configuration
-# (Configura aquí tus reglas y preferencias)
 init-hook = "import sys; sys.path.append('/app'); import os; os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')"
+ignore = [
+    "urls.py",
+    "migrations"
+]
 
 
 [tool.pylint.'FORMAT']

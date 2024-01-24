@@ -1,19 +1,26 @@
-# tests/test_views.py
+# pylint: disable=redefined-outer-name
 import pytest
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.test import Client
 from django.urls import reverse
 
+@pytest.fixture
+def test_user():
+    """Create and return a test user."""
+    user = get_user_model()
+    return user.objects.create_user(username='testuser', password='12345')
+
+@pytest.fixture
+def test_client():
+    """Create and return a Django test client."""
+    return Client()
 
 @pytest.mark.django_db
-def test_index_view():
+def test_index_view(test_user, test_client):
     # Crea un usuario y haz login para cumplir con @login_required
-    user = User.objects.create_user(username='testuser', password='12345')
-    client = Client()
-    client.login(username='testuser', password='12345')
-
+    test_client.login(username=test_user.username, password='12345')
     url = reverse('index')  # Asegúrate de que 'index' es el nombre correcto de la URL de tu vista
-    response = client.get(url)
+    response = test_client.get(url)
 
     # Verifica que la respuesta es la esperada
     assert response.status_code == 200
