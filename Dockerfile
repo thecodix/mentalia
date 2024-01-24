@@ -5,7 +5,7 @@ FROM python:3.12
 WORKDIR /
 
 # Copy the data file to the root directory of the container
-COPY datos_examenes_completo.json .
+COPY datos_examenes.json .
 
 # Establece un directorio de trabajo
 ARG APP_HOME=/app

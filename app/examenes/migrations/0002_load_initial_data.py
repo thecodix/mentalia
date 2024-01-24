@@ -4,7 +4,7 @@ from django.db import migrations
 
 
 def cargar_datos(apps, schema_editor):
-    with open('/datos_examenes_completo.json', 'r') as file:
+    with open('/datos_examenes.json', 'r') as file:
         data = json.load(file)
 
     # Obtener los modelos

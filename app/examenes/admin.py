@@ -37,7 +37,7 @@ class PreguntaAdmin(admin.ModelAdmin):
 
 @admin.register(OpcionDeRespuesta)
 class OpcionDeRespuestaAdmin(admin.ModelAdmin):
-    list_display = ('asignatura', 'tema', 'pregunta', 'texto', 'correcta')
+    list_display = ('asignatura', 'tema', 'pregunta', 'id', 'texto', 'correcta')
 
     def asignatura(self, obj):
         return obj.pregunta.tema.asignatura.nombre
