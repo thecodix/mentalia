@@ -41,7 +41,17 @@ def index(request):
     asignaturas = Asignatura.objects.all()
     temas = Tema.objects.all()
     numero_preguntas_opciones = [1, 5, 15, 20, 30]
-    return render(request, 'examenes/index.html', {'carreras': carreras, 'cursos': cursos, 'asignaturas': asignaturas, 'temas': temas, 'numero_preguntas_opciones': numero_preguntas_opciones})
+    return render(
+        request,
+        'examenes/index.html',
+        {
+            'carreras': carreras,
+            'cursos': cursos,
+            'asignaturas': asignaturas,
+            'temas': temas,
+            'numero_preguntas_opciones': numero_preguntas_opciones
+        }
+    )
 
 
 @login_required
@@ -78,7 +88,8 @@ def submit_test(request):
             pregunta = Pregunta.objects.get(id=pregunta_id)
             respuesta_correcta = pregunta.opcionderespuesta_set.get(es_correcta=True)
             respuesta_seleccionada_id = value if value.isdigit() else None
-            respuesta_seleccionada = OpcionDeRespuesta.objects.get(id=respuesta_seleccionada_id) if respuesta_seleccionada_id else None
+            respuesta_seleccionada = OpcionDeRespuesta.objects.get(
+                id=respuesta_seleccionada_id) if respuesta_seleccionada_id else None
             if value == 'no_contestada':
                 respuestas_no_contestadas += 1
                 preguntas_y_respuestas.append({
@@ -137,8 +148,15 @@ def preguntas_por_tema(request, tema_id):
 
 @login_required
 def historico_tests(request):
-    tests_realizados = TestRealizado.objects.filter(usuario=request.user).order_by('-fecha')  # Ordena por fecha, los más recientes primero
-    return render(request, 'examenes/historico_tests.html', {'tests_realizados': tests_realizados})
+    """Ordena los tests por fecha, mostrando primero los más recientes."""
+    tests_realizados = TestRealizado.objects.filter(usuario=request.user).order_by('-fecha')
+    return render(
+        request,
+        'examenes/historico_tests.html',
+        {
+            'tests_realizados': tests_realizados
+        }
+    )
 
 
 @login_required

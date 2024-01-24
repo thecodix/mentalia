@@ -8,3 +8,5 @@ services:
       - ./app:/app
     ports:
       - "8007:8007"
+    env_file:
+      - ./mentalia.env

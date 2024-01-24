@@ -48,5 +48,10 @@ isort:
 pylint:
 	@docker exec -it mentalia-web-1 sh -c "pylint . --recursive=true"
 
+bandit:
+	@docker exec -it mentalia-web-1 sh -c "bandit -c pyproject.toml -r ."
+
+linters: isort pylint bandit
+
 test:
 	@docker exec -it mentalia-web-1 sh -c "pytest"

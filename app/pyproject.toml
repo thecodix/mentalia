@@ -6,6 +6,9 @@ python_files = [
 ]
 addopts = "-v --tb=short"
 
+[tool.bandit]
+exclude_dirs = ["tests"]
+
 [tool.isort]
 profile = "black"
 line_length = 88
@@ -24,19 +27,15 @@ ignore = [
 
 [tool.pylint.'FORMAT']
 # Configuraciones específicas para el formato del código
-max-line-length = 88  # Black utiliza 88 caracteres por línea por defecto
+max-line-length = 120
 
 [tool.pylint.'MESSAGES CONTROL']
 # Desactiva o ajusta las advertencias que puedan entrar en conflicto con Black
 disable= [
-    "invalid-name",
-    "line-too-long",
     "logging-fstring-interpolation",
-    "logging-not-lazy",
     "missing-class-docstring",
     "missing-function-docstring",
     "missing-module-docstring",
-    "missing-timeout",
 ]
 
 # Más configuraciones de Pylint aquí si es necesario

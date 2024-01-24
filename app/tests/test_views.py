@@ -4,6 +4,7 @@ from django.contrib.auth import get_user_model
 from django.test import Client
 from django.urls import reverse
 
+
 @pytest.fixture
 def test_user():
     """Create and return a test user."""
