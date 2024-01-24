@@ -7,6 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponseNotAllowed
 from django.shortcuts import get_object_or_404, redirect, render
 
+from .services import process_test_submission
 from .models import (
     Asignatura,
     Carrera,
@@ -70,73 +71,17 @@ def submit_test(request):
     if request.method != 'POST':
         return HttpResponseNotAllowed(['POST'])
 
-    test_realizado = TestRealizado(usuario=request.user)
-    test_realizado.preguntas_correctas = 0
-    test_realizado.preguntas_falladas = 0
-    test_realizado.preguntas_no_contestadas = 0
-    test_realizado.total_preguntas = 0
-    test_realizado.save()
-    respuestas_correctas = 0
-    respuestas_falladas = 0
-    respuestas_no_contestadas = 0
-    preguntas_y_respuestas = []
-    pregunta = None
-
-    for key, value in request.POST.items():
-        if key.startswith('pregunta_'):
-            pregunta_id = int(key.split('_')[1])
-            pregunta = Pregunta.objects.get(id=pregunta_id)
-            respuesta_correcta = pregunta.opcionderespuesta_set.get(es_correcta=True)
-            respuesta_seleccionada_id = value if value.isdigit() else None
-            respuesta_seleccionada = OpcionDeRespuesta.objects.get(
-                id=respuesta_seleccionada_id) if respuesta_seleccionada_id else None
-            if value == 'no_contestada':
-                respuestas_no_contestadas += 1
-                preguntas_y_respuestas.append({
-                    'pregunta': pregunta,
-                    'seleccionada': None,
-                    'correcta': respuesta_correcta
-                })
-            else:
-                respuesta_seleccionada = pregunta.opcionderespuesta_set.get(id=int(value))
-
-                if respuesta_seleccionada == respuesta_correcta:
-                    respuestas_correctas += 1
-                else:
-                    respuestas_falladas += 1
-
-                preguntas_y_respuestas.append({
-                    'pregunta': pregunta,
-                    'seleccionada': respuesta_seleccionada,
-                    'correcta': respuesta_correcta
-                })
-
-            RespuestaTest.objects.create(
-                test_realizado=test_realizado,
-                pregunta=pregunta,
-                respuesta_seleccionada=respuesta_seleccionada
-            )
-
-    total_preguntas = respuestas_correctas + respuestas_falladas + respuestas_no_contestadas
+    test_realizado, preguntas_y_respuestas = process_test_submission(request.user, request.POST)
 
     context = {
         'preguntas_y_respuestas': preguntas_y_respuestas,
-        'num_acertadas': respuestas_correctas,
-        'num_falladas': respuestas_falladas,
-        'num_no_contestadas': respuestas_no_contestadas,
-        'total_preguntas': total_preguntas,
-        'porcentaje_aciertos': (respuestas_correctas / total_preguntas) * 100,
+        'num_acertadas': test_realizado.preguntas_correctas,
+        'num_falladas': test_realizado.preguntas_falladas,
+        'num_no_contestadas': test_realizado.preguntas_no_contestadas,
+        'total_preguntas': test_realizado.total_preguntas,
+        'porcentaje_aciertos': (test_realizado.preguntas_correctas / test_realizado.total_preguntas) * 100,
     }
     # Crear y guardar un nuevo TestRealizado
-    if pregunta:
-        test_realizado.asignatura = pregunta.tema.asignatura
-        test_realizado.tema = pregunta.tema
-        test_realizado.preguntas_correctas = respuestas_correctas
-        test_realizado.preguntas_falladas = respuestas_falladas
-        test_realizado.preguntas_no_contestadas = respuestas_no_contestadas
-        test_realizado.total_preguntas = total_preguntas
-        test_realizado.save()
-
     return render(request, 'examenes/resultado_test.html', context)
 
 

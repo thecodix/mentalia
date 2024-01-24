@@ -1,10 +1,16 @@
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
+testpaths = [
+    "tests"
+]
 python_files = [
     "test_*.py",
     "*_test.py"
 ]
 addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::pytest.PytestCollectionWarning"
+]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
