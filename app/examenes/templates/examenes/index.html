@@ -22,35 +22,30 @@
             <h1 class="text-center">Bienvenido a los Tests Online</h1>
             <form action="{% url 'test' %}" method="get">
                 <div class="form-group">
-                    <label for="carrera">Carrera:</label>
+                    <label for="carrera">Selecciona la carrera:</label>
                     <select class="form-control" id="carrera" name="carrera">
+                        <option value="">Seleccione una carrera</option>
                         {% for carrera in carreras %}
-                            <option value="{{ carrera.id }}">{{ carrera.nombre }}</option>
+                        <option value="{{ carrera.id }}">{{ carrera.nombre }}</option>
                         {% endfor %}
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="curso">Curso:</label>
-                    <select class="form-control" id="curso" name="curso">
-                        {% for curso in cursos %}
-                            <option value="{{ curso.id }}">{{ curso.nombre }}</option>
-                        {% endfor %}
+                    <select class="form-control" id="curso" name="curso" disabled>
+                        <option value="">Seleccione un curso</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="asignatura">Asignatura</label>
-                    <select class="form-control" id="asignatura" name="asignatura">
-                        {% for asignatura in asignaturas %}
-                            <option value="{{ asignatura.id }}">{{ asignatura.nombre }}</option>
-                        {% endfor %}
+                    <select class="form-control" id="asignatura" name="asignatura" disabled>
+                        <option value="">Seleccione una asignatura</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="tema">Tema</label>
-                    <select class="form-control" id="tema" name="tema">
-                        {% for tema in temas %}
-                            <option value="{{ tema.id }}">{{ tema.nombre }}</option>
-                        {% endfor %}
+                    <select class="form-control" id="tema" name="tema" disabled>
+                        <option value="">Seleccione un tema</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -65,5 +60,94 @@
             </form>
         </div>
     </div>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('carrera').addEventListener('change', function() {
+            var carreraId = this.value;
+            if (carreraId) {
+                fetch('get_cursos/?carrera_id=' + carreraId)
+                    .then(response => response.json())
+                    .then(data => updateCursos(data))
+                    .catch(error => console.error('Error:', error));
+            } else {
+                resetDropdown('curso');
+                resetDropdown('asignatura');
+                resetDropdown('tema');
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('curso').addEventListener('change', function() {
+            var cursoId = this.value;
+            if (cursoId) {
+                fetch('get_asignaturas/?curso_id=' + cursoId)
+                    .then(response => response.json())
+                    .then(data => updateAsignaturas(data))
+                    .catch(error => console.error('Error:', error));
+            } else {
+                resetDropdown('asignatura');
+                resetDropdown('tema');
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('asignatura').addEventListener('change', function() {
+            var asignaturaId = this.value;
+            if (asignaturaId) {
+                fetch('get_temas/?asignatura_id=' + asignaturaId)
+                    .then(response => response.json())
+                    .then(data => updateTemas(data))
+                    .catch(error => console.error('Error:', error));
+            } else {
+                resetDropdown('tema');
+            }
+        });
+    });
+
+    function updateCursos(cursos) {
+        var selectCurso = document.getElementById('curso');
+        resetDropdown('curso');
+        cursos.forEach(function(curso) {
+            var option = document.createElement('option');
+            option.value = curso.id;
+            option.text = curso.nombre;
+            selectCurso.appendChild(option);
+        });
+        selectCurso.disabled = false;
+    }
+
+    function updateAsignaturas(asignaturas) {
+        var selectAsignatura = document.getElementById('asignatura');
+        resetDropdown('asignatura');
+        asignaturas.forEach(function(asignatura) {
+            var option = document.createElement('option');
+            option.value = asignatura.id;
+            option.text = asignatura.nombre;
+            selectAsignatura.appendChild(option);
+        });
+        selectAsignatura.disabled = false;
+    }
+
+    function updateTemas(temas) {
+        var selectTema = document.getElementById('tema');
+        resetDropdown('tema');
+        temas.forEach(function(tema) {
+            var option = document.createElement('option');
+            option.value = tema.id;
+            option.text = tema.nombre;
+            selectTema.appendChild(option);
+        });
+        selectTema.disabled = false;
+    }
+
+    function resetDropdown(id) {
+        var select = document.getElementById(id);
+        select.innerHTML = '<option value="">Seleccione un/a ' + id + '</option>';
+        select.disabled = true;
+    }
+</script>
+
 </body>
 </html>

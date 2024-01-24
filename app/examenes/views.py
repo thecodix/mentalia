@@ -1,4 +1,5 @@
 import random
+from django.http import JsonResponse
 
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import authenticate, login, logout
@@ -37,6 +38,61 @@ def register(request):
 
 @login_required
 def index(request):
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+        tipo = request.GET.get('tipo')
+        seleccion = request.GET.get('seleccion')
+
+        if tipo == 'carrera':
+            cursos = Curso.objects.filter(carrera_id=seleccion).values('id', 'nombre')
+            return JsonResponse({'cursos': list(cursos)})
+        elif tipo == 'curso':
+            asignaturas = Asignatura.objects.filter(curso_id=seleccion).values('id', 'nombre')
+            return JsonResponse({'asignaturas': list(asignaturas)})
+        elif tipo == 'asignatura':
+            temas = Tema.objects.filter(asignatura_id=seleccion).values('id', 'nombre')
+            return JsonResponse({'temas': list(temas)})
+
+    carreras = Carrera.objects.all()
+    numero_preguntas_opciones = [1, 5, 15, 20, 30]
+    return render(
+        request,
+        'examenes/index.html',
+        {
+            'carreras': carreras,
+            'numero_preguntas_opciones': numero_preguntas_opciones
+        }
+    )
+
+
+@login_required
+def get_temas(request):
+    asignatura_id = request.GET.get('asignatura_id')
+    if asignatura_id:
+        temas = Tema.objects.filter(asignatura_id=asignatura_id).values('id', 'nombre')
+        return JsonResponse(list(temas), safe=False)
+    return JsonResponse([], safe=False)
+
+
+@login_required
+def get_asignaturas(request):
+    curso_id = request.GET.get('curso_id')
+    if curso_id:
+        asignaturas = Asignatura.objects.filter(curso_id=curso_id).values('id', 'nombre')
+        return JsonResponse(list(asignaturas), safe=False)
+    return JsonResponse([], safe=False)
+
+
+@login_required
+def get_cursos(request):
+    carrera_id = request.GET.get('carrera_id')
+    if carrera_id:
+        cursos = Curso.objects.filter(carrera_id=carrera_id).values('id', 'nombre')
+        return JsonResponse(list(cursos), safe=False)
+    return JsonResponse([], safe=False)
+
+
+@login_required
+def index2(request):
     carreras = Carrera.objects.all()
     cursos = Curso.objects.all()
     asignaturas = Asignatura.objects.all()
