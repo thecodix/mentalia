@@ -1,5 +1,6 @@
 
-
+up:
+	docker compose up -d
 
 makemigrations:
 	@docker exec -it mentalia-web-1 ./manage.py makemigrations examenes
@@ -28,7 +29,7 @@ restart:
 	-docker compose down
 	-docker rmi mentalia-web
 	docker compose build
-	docker compose up -d
+	make up
 	sleep 2  # Give the container some time to start up properly
 	make restore-data
 
@@ -43,3 +44,9 @@ isort:
 	@docker exec -it mentalia-web-1 sh -c "isort ."
 
 .PHONY: isort
+
+pylint:
+	@docker exec -it mentalia-web-1 sh -c "pylint . --recursive=true"
+
+test:
+	@docker exec -it mentalia-web-1 sh -c "pytest"

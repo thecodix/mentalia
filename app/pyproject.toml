@@ -1,3 +1,39 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = [
+    "test_*.py",
+    "*_test.py"
+]
+addopts = "-v --tb=short"
+
 [tool.isort]
 profile = "black"
 line_length = 88
+
+[tool.pylint]
+load-plugins = ["pylint_django"]
+
+[tool.pylint.MASTER]
+# Pylint configuration
+# (Configura aquí tus reglas y preferencias)
+init-hook = "import sys; sys.path.append('/app'); import os; os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')"
+
+
+[tool.pylint.'FORMAT']
+# Configuraciones específicas para el formato del código
+max-line-length = 88  # Black utiliza 88 caracteres por línea por defecto
+
+[tool.pylint.'MESSAGES CONTROL']
+# Desactiva o ajusta las advertencias que puedan entrar en conflicto con Black
+disable= [
+    "invalid-name",
+    "line-too-long",
+    "logging-fstring-interpolation",
+    "logging-not-lazy",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "missing-timeout",
+]
+
+# Más configuraciones de Pylint aquí si es necesario
