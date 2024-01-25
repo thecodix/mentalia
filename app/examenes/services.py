@@ -1,5 +1,5 @@
 # services.py
-from .models import Pregunta, OpcionDeRespuesta, RespuestaTest, TestRealizado
+from .models import OpcionDeRespuesta, Pregunta, RespuestaTest, TestRealizado
 
 
 def process_test_submission(user, post_data):
@@ -61,9 +61,3 @@ def process_test_submission(user, post_data):
         test_realizado.total_preguntas = respuestas_correctas + respuestas_falladas + respuestas_no_contestadas
     test_realizado.save()
     return test_realizado, preguntas_y_respuestas
-
-
-def process_question(pregunta_id, respuesta_id):
-    # Logic to process each question
-    # Return pregunta, respuesta_correcta, respuesta_seleccionada, and resultado (correct, incorrect, no contestada)
-    pass

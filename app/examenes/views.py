@@ -1,24 +1,14 @@
 import random
-from django.http import JsonResponse
 
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.http import HttpResponseNotAllowed
+from django.http import HttpResponseNotAllowed, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
+from .models import Asignatura, Carrera, Curso, Pregunta, Tema, TestRealizado
 from .services import process_test_submission
-from .models import (
-    Asignatura,
-    Carrera,
-    Curso,
-    OpcionDeRespuesta,
-    Pregunta,
-    RespuestaTest,
-    Tema,
-    TestRealizado,
-)
 
 
 def register(request):
@@ -45,10 +35,10 @@ def index(request):
         if tipo == 'carrera':
             cursos = Curso.objects.filter(carrera_id=seleccion).values('id', 'nombre')
             return JsonResponse({'cursos': list(cursos)})
-        elif tipo == 'curso':
+        if tipo == 'curso':
             asignaturas = Asignatura.objects.filter(curso_id=seleccion).values('id', 'nombre')
             return JsonResponse({'asignaturas': list(asignaturas)})
-        elif tipo == 'asignatura':
+        if tipo == 'asignatura':
             temas = Tema.objects.filter(asignatura_id=seleccion).values('id', 'nombre')
             return JsonResponse({'temas': list(temas)})
 

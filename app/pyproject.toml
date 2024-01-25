@@ -27,7 +27,8 @@ load-plugins = ["pylint_django"]
 init-hook = "import sys; sys.path.append('/app'); import os; os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')"
 ignore = [
     "urls.py",
-    "migrations"
+    "migrations",
+    "scripts"
 ]
 
 
@@ -38,10 +39,9 @@ max-line-length = 120
 [tool.pylint.'MESSAGES CONTROL']
 # Desactiva o ajusta las advertencias que puedan entrar en conflicto con Black
 disable= [
+    "fixme",
     "logging-fstring-interpolation",
     "missing-class-docstring",
     "missing-function-docstring",
     "missing-module-docstring",
 ]
-
-# Más configuraciones de Pylint aquí si es necesario

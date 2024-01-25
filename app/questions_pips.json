@@ -1,0 +1,578 @@
+[
+    {
+        "model": "examenes.asignatura",
+        "pk": 3,
+        "fields": {
+            "curso": 2,
+            "nombre": "Proyectos de Intervención Psicosocial"
+        }
+    },
+    {
+        "model": "examenes.tema",
+        "pk": 3,
+        "fields": {
+            "nombre": "Tema 1 - PIPS",
+            "asignatura": 3
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 164,
+        "fields": {
+            "tema": 3,
+            "texto": "¿Cuál es el ciclo de un proyecto?"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 468,
+        "fields": {
+            "pregunta": 164,
+            "texto": "Identificación, diseño, ejecución y seguimiento, evaluación",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 469,
+        "fields": {
+            "pregunta": 164,
+            "texto": "Identificación, diseño, ejecución y evaluación, seguimiento ",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 470,
+        "fields": {
+            "pregunta": 164,
+            "texto": "Diseño, identificación, ejecución y seguimiento, evaluación",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 165,
+        "fields": {
+            "tema": 3,
+            "texto": "El proyecto de animación tiene como estrategias:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 471,
+        "fields": {
+            "pregunta": 165,
+            "texto": "Ajuste, cambio de situación y devolución",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 472,
+        "fields": {
+            "pregunta": 165,
+            "texto": "Encargo, cambio de situación y devolución.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 473,
+        "fields": {
+            "pregunta": 165,
+            "texto": "Encargo, ajuste, cambio de situación y devolución.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 166,
+        "fields": {
+            "tema": 3,
+            "texto": "El pronóstico puede ser:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 474,
+        "fields": {
+            "pregunta": 166,
+            "texto": "Favorable o desfavorable",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 475,
+        "fields": {
+            "pregunta": 166,
+            "texto": "Muy favorable o poco favorable",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 476,
+        "fields": {
+            "pregunta": 166,
+            "texto": "Un continuo que va desde muy favorable a desfavorable.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 167,
+        "fields": {
+            "tema": 3,
+            "texto": "Cual NO es un objetivo de la evaluación:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 477,
+        "fields": {
+            "pregunta": 167,
+            "texto": "Mejorar y perfeccionar el proyecto",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 478,
+        "fields": {
+            "pregunta": 167,
+            "texto": "Facilitar el proceso de toma de decisiones",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 479,
+        "fields": {
+            "pregunta": 167,
+            "texto": "Feedback con la población afectada (devolver información)",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 168,
+        "fields": {
+            "tema": 3,
+            "texto": "La eficacia es:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 480,
+        "fields": {
+            "pregunta": 168,
+            "texto": "El grado en el cual se alcanzan los objetivos y metas del proyecto en un tiempo determinado, independientemente de los costos que ello implique.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 481,
+        "fields": {
+            "pregunta": 168,
+            "texto": "El grado en el cual se alcanzan los objetivos y metas del proyecto en un tiempo determinado, teniendo en cuenta los costos que ello implique.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 482,
+        "fields": {
+            "pregunta": 168,
+            "texto": "La relación existente entre los resultados reales y los objetivos planificados. ",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 169,
+        "fields": {
+            "tema": 3,
+            "texto": "La efectividad es:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 483,
+        "fields": {
+            "pregunta": 169,
+            "texto": "La relación existente entre los resultados reales y los objetivos planificados, teniendo en cuenta los costos.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 484,
+        "fields": {
+            "pregunta": 169,
+            "texto": "El grado en el cual se alcanzan los objetivos y metas del proyecto en un tiempo determinado, teniendo en cuenta los costos que ello implique.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 485,
+        "fields": {
+            "pregunta": 169,
+            "texto": "La relación existente entre los resultados reales y los objetivos planificados.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 170,
+        "fields": {
+            "tema": 3,
+            "texto": "La viabilidad técnica es:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 486,
+        "fields": {
+            "pregunta": 170,
+            "texto": "Posibilidad de llevar a cabo el proyecto reduciendo al máximo todos sus obstáculos y analizando si los destinatarios están dispuestos a asumir por ellos mismo los objetivos propuestos por el proyecto.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 487,
+        "fields": {
+            "pregunta": 170,
+            "texto": "Conocer tanto cualitativa como cuantitativamente la idoneidad de los recursos.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 488,
+        "fields": {
+            "pregunta": 170,
+            "texto": "Conocer en que medida el contexto es favorable, indiferente o contrario al proyecto.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 171,
+        "fields": {
+            "tema": 3,
+            "texto": "La evaluabilidad es:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 489,
+        "fields": {
+            "pregunta": 171,
+            "texto": "Medida en la cual un proyecto puede ser evaluado, lo cual depende en buena parte hasta qué punto ha sido bien diseñado, así como de las posibles barreras que dificulten la evaluación.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 490,
+        "fields": {
+            "pregunta": 171,
+            "texto": "Es una cuestión que siempre responde a la misma pregunta ¿se dan las condiciones necesarias para que los logros del proyecto se mantengan indefinidamente en el futuro? ",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 491,
+        "fields": {
+            "pregunta": 171,
+            "texto": "Ninguna de las anteriores es correcta",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 172,
+        "fields": {
+            "tema": 3,
+            "texto": "La evaluación ex post:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 492,
+        "fields": {
+            "pregunta": 172,
+            "texto": "Se lleva a cabo durante la ejecución del proyecto para detectar cualquier problema que pueda provocar un funcionamiento inadecuado del proyecto.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 493,
+        "fields": {
+            "pregunta": 172,
+            "texto": "Evalúa la viabilidad del proyecto propuesto.",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 494,
+        "fields": {
+            "pregunta": 172,
+            "texto": "Analiza los resultados obtenidos al finalizar el proyecto.",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 173,
+        "fields": {
+            "tema": 3,
+            "texto": "Una necesidad sentida puesta en acción mediante una solicitud es:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 495,
+        "fields": {
+            "pregunta": 173,
+            "texto": "Necesidad expresada",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 496,
+        "fields": {
+            "pregunta": 173,
+            "texto": "Necesidad normativa",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 497,
+        "fields": {
+            "pregunta": 173,
+            "texto": "Necesidad experimentada",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 174,
+        "fields": {
+            "tema": 3,
+            "texto": "Los enfoques teóricos del diagnóstico son:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 498,
+        "fields": {
+            "pregunta": 174,
+            "texto": "La teoría de la necesidad y la teoría del riesgo",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 499,
+        "fields": {
+            "pregunta": 174,
+            "texto": "La teoría de la necesidad social, de la afección y del riesgo",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 500,
+        "fields": {
+            "pregunta": 174,
+            "texto": "La teoría de la necesidad y la teoría de la carencia",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 175,
+        "fields": {
+            "tema": 3,
+            "texto": "Las estrategias de: encargo, ajuste, cambio de situación y devolución se presentan en:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 501,
+        "fields": {
+            "pregunta": 175,
+            "texto": "Proyecto de sensibilización",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 502,
+        "fields": {
+            "pregunta": 175,
+            "texto": "Proyecto de animación sociocultural",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 503,
+        "fields": {
+            "pregunta": 175,
+            "texto": "Proyecto de animación",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 176,
+        "fields": {
+            "tema": 3,
+            "texto": "En el diseño teórico de un proyecto de intervención psicosocial, siempre están presente:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 504,
+        "fields": {
+            "pregunta": 176,
+            "texto": "El encargo y la devolución",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 505,
+        "fields": {
+            "pregunta": 176,
+            "texto": "El ajuste y la devolución",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 506,
+        "fields": {
+            "pregunta": 176,
+            "texto": "El ajuste y el cambio de situación",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 177,
+        "fields": {
+            "tema": 3,
+            "texto": "Qué tipo de documentación es la que recoge todos los datos que la administración requiere para mantener el “contrato”:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 507,
+        "fields": {
+            "pregunta": 177,
+            "texto": "Memoria",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 508,
+        "fields": {
+            "pregunta": 177,
+            "texto": "Informe científico",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 509,
+        "fields": {
+            "pregunta": 177,
+            "texto": "Informativo o de sensibilización",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 178,
+        "fields": {
+            "tema": 3,
+            "texto": "Un pronóstico favorable es cuando:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 510,
+        "fields": {
+            "pregunta": 178,
+            "texto": "Las personas que sufren la carencia tienen el problema, pero no lo reconocen",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 511,
+        "fields": {
+            "pregunta": 178,
+            "texto": "Las personas que sufren la carencia tienen el problema y lo reconocen",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 512,
+        "fields": {
+            "pregunta": 178,
+            "texto": "Ninguna de las anteriores es correcta",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 179,
+        "fields": {
+            "tema": 3,
+            "texto": "Los resultados si dan menos de 1, el proyecto es:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 513,
+        "fields": {
+            "pregunta": 179,
+            "texto": "Muy eficaz ",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 514,
+        "fields": {
+            "pregunta": 179,
+            "texto": "Poco eficaz",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 515,
+        "fields": {
+            "pregunta": 179,
+            "texto": "Ineficaz",
+            "es_correcta": true
+        }
+    }
+]
