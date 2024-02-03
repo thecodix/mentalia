@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.db import models
 
+from django.contrib.auth.models import User
 
 class Carrera(models.Model):
     nombre = models.CharField(max_length=100)
@@ -39,6 +40,7 @@ class Pregunta(models.Model):
 
     def __str__(self):
         return f"{self.tema.nombre} {self.id} - {self.texto[:30]}"
+
 
 class OpcionDeRespuesta(models.Model):
     pregunta = models.ForeignKey(Pregunta, on_delete=models.CASCADE)
@@ -94,3 +96,49 @@ class RespuestaTest(models.Model):
 
     class Meta:
         unique_together = ['test_realizado', 'pregunta', 'respuesta_seleccionada']
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    experiencia_total = models.IntegerField(default=0)
+
+
+class AsignaturaUsuario(models.Model):
+    usuario = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    asignatura = models.ForeignKey(Asignatura, on_delete=models.CASCADE)
+    experiencia = models.IntegerField(default=0)
+
+
+# Secciones
+
+class Seccion(models.Model):
+    nombre = models.CharField(max_length=100)
+    asignatura = models.ForeignKey(Asignatura, on_delete=models.CASCADE)
+    orden = models.PositiveIntegerField()
+
+    class Meta:
+        ordering = ['orden']
+
+    def __str__(self):
+        return self.nombre
+
+
+class Subseccion(models.Model):
+    nombre = models.CharField(max_length=100)
+    seccion = models.ForeignKey(Seccion, on_delete=models.CASCADE)
+    orden = models.PositiveIntegerField()
+
+    class Meta:
+        ordering = ['orden']
+
+    def __str__(self):
+        return self.nombre
+
+
+class ProgresoUsuario(models.Model):
+    usuario = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    subseccion = models.ForeignKey(Subseccion, on_delete=models.CASCADE)
+    completada = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.usuario} - {self.subseccion}"

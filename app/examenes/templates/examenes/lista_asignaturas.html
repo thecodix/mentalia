@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Asignaturas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .centrado {
+            border: 1px solid #ddd;
+            padding: 20px; /* Aumenta el padding */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            max-width: 600px; /* Establece un ancho máximo */
+            margin-left: auto;  /* Centra el bloque */
+            margin-right: auto; /* Centra el bloque */
+        }
+    </style>
+</head>
+<body>
+    {% include 'examenes/navbar.html' %}
+    <div class="container mt-4">
+        <div class="centrado">
+            <h2>Mis Asignaturas</h2>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            {% if estudios %}
+                <ul class="list-group">
+                    {% for estudio in estudios %}
+                        <a href="{% url 'roadmap' estudio.asignatura.id %}" class="list-group-item d-flex justify-content-between align-items-center">
+                            {{ estudio.asignatura.nombre }}
+                            <span class="badge badge-primary badge-pill">{{ estudio.experiencia }} XP</span>
+                        </a>
+                    {% endfor %}
+                </ul>
+
+            {% else %}
+                <p>No estás estudiando ninguna asignatura aún.</p>
+            {% endif %}
+            <a href="{% url 'seleccionar_asignatura' %}" class="btn btn-primary mt-3">Añadir más asignaturas</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

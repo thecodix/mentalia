@@ -55,3 +55,6 @@ linters: isort pylint bandit
 
 test:
 	@docker exec -it mentalia-web-1 sh -c "pytest"
+
+static:
+	@docker exec -it mentalia-web-1 ./manage.py collectstatic

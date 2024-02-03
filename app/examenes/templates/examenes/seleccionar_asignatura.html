@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Asignatura</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .centrado {
+            border: 1px solid #ddd;
+            padding: 20px; /* Aumenta el padding */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            max-width: 600px; /* Establece un ancho máximo */
+            margin-left: auto;  /* Centra el bloque */
+            margin-right: auto; /* Centra el bloque */
+        }
+    </style>
+</head>
+<body>
+    {% include 'examenes/navbar.html' %}
+    <div class="container mt-4">
+        <div class="centrado">
+            <h1>Elige tu Asignatura</h1>
+            {% for asignatura in asignaturas %}
+            <div class="row border p-3 mb-2">
+                <div class="col text-left">
+                    <h5 class="card-title">{{ asignatura.nombre }}</h5>
+                </div>
+                <div class="col text-right">
+                    <a href="{% url 'desbloquear_asignatura' asignatura.id %}" class="btn btn-primary">Desbloquear</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% if not asignaturas %}
+                <p>No quedan asignaturas por estudiar!</p>
+            {% endif %}
+        </div>
+    </div>
+
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            {% for asignatura in asignaturas %}#}
+{#            <div class="col-md-4">#}
+{#                <div class="card">#}
+{#                    <img class="card-img-top" src="{{ asignatura.icono }}" alt="{{ asignatura.nombre }}">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">{{ asignatura.nombre }}</h5>#}
+{#                        <a href="{% url 'desbloquear_asignatura' asignatura.id %}" class="btn btn-primary">Desbloquear</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

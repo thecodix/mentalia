@@ -1,0 +1,9 @@
+.centrado {
+    border: 1px solid #ddd;
+    padding: 20px; /* Aumenta el padding */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    max-width: 600px; /* Establece un ancho máximo */
+    margin-left: auto;  /* Centra el bloque */
+    margin-right: auto; /* Centra el bloque */
+}

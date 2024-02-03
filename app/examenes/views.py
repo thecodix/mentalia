@@ -1,5 +1,6 @@
 import random
 
+from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
@@ -7,7 +8,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponseNotAllowed, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
-from .models import Asignatura, Carrera, Curso, Pregunta, Tema, TestRealizado
+from .models import Asignatura, Carrera, Curso, Pregunta, Tema, TestRealizado, RespuestaTest, AsignaturaUsuario, \
+    UserProfile, Seccion, ProgresoUsuario
 from .services import process_test_submission
 
 
@@ -24,6 +26,46 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'examenes/register.html', {'form': form})
+
+
+def seleccionar_asignatura(request):
+    perfil_usuario = UserProfile.objects.get(user=request.user)
+    asignaturas_estudiadas = AsignaturaUsuario.objects.filter(usuario=perfil_usuario).values_list('asignatura', flat=True)
+    asignaturas_para_desbloquear = Asignatura.objects.exclude(id__in=asignaturas_estudiadas)
+    return render(request, 'examenes/seleccionar_asignatura.html', {'asignaturas': asignaturas_para_desbloquear})
+
+
+def lista_asignaturas(request):
+    estudios = AsignaturaUsuario.objects.filter(usuario__user=request.user)
+    return render(request, 'examenes/lista_asignaturas.html', {'estudios': estudios})
+
+
+def desbloquear_asignatura(request, asignatura_id):
+    asignatura = get_object_or_404(Asignatura, id=asignatura_id)
+    perfil_usuario, created = UserProfile.objects.get_or_create(user=request.user)
+
+    ya_estudiando = AsignaturaUsuario.objects.filter(usuario=perfil_usuario, asignatura=asignatura).exists()
+    if not ya_estudiando:
+        AsignaturaUsuario.objects.create(usuario=perfil_usuario, asignatura=asignatura)
+        messages.success(request, f'La asignatura {asignatura.nombre} se añadió con éxito')
+    else:
+        messages.info(request, f'Ya estás estudiando la asignatura {asignatura.nombre}')
+
+    return redirect('lista_asignaturas')
+
+
+def roadmap(request, asignatura_id):
+    secciones = Seccion.objects.filter(asignatura_id=asignatura_id)
+    for seccion in secciones:
+        for subseccion in seccion.subseccion_set.all():
+            progreso, creado = ProgresoUsuario.objects.get_or_create(
+                usuario=request.user.userprofile,
+                subseccion=subseccion
+            )
+            subseccion.progreso_usuario = progreso
+
+    return render(request, 'examenes/roadmap.html', {'secciones': secciones})
+
 
 
 @login_required
@@ -105,9 +147,15 @@ def index2(request):
 def test(request):
     numero_preguntas = request.GET.get('numero_preguntas') or '1'
 
-    # Asumiendo que el tema se pasa como un parámetro GET
     tema_id = request.GET.get('tema')
-    preguntas = list(Pregunta.objects.filter(tema_id=tema_id))
+    asignatura_id = request.GET.get('asignatura')
+    temas_relacionados = Tema.objects.filter(asignatura_id=asignatura_id)
+
+    preguntas = list(Pregunta.objects.filter(tema__in=temas_relacionados))
+
+    if tema_id != 'todos':
+        preguntas = list(Pregunta.objects.filter(tema_id=tema_id))
+
     preguntas_seleccionadas = random.sample(preguntas, min(len(preguntas), int(numero_preguntas)))
     return render(request, 'examenes/test.html', {'preguntas': preguntas_seleccionadas})
 
@@ -141,6 +189,10 @@ def preguntas_por_tema(request, tema_id):
 def historico_tests(request):
     """Ordena los tests por fecha, mostrando primero los más recientes."""
     tests_realizados = TestRealizado.objects.filter(usuario=request.user).order_by('-fecha')
+    for test in tests_realizados:
+        test.porcentaje_correctas = test.preguntas_correctas*100/test.total_preguntas
+        test.porcentaje_falladas = test.preguntas_falladas*100/test.total_preguntas
+        test.porcentaje_no_contestadas = test.preguntas_no_contestadas*100/test.total_preguntas
     return render(
         request,
         'examenes/historico_tests.html',
@@ -153,6 +205,24 @@ def historico_tests(request):
 @login_required
 def detalle_test(request, test_id):
     user_test = get_object_or_404(TestRealizado, id=test_id)
+
+    temas = Tema.objects.filter(asignatura=user_test.asignatura)
+    resultados = []
+
+    for tema in temas:
+        total_preguntas = RespuestaTest.objects.filter(test_realizado=user_test, pregunta__tema=tema).count()
+        if total_preguntas == 0:
+            resultados.append({'tema': tema.nombre, 'aciertos': 0, 'fallos': 0, 'total': 0})
+        aciertos = RespuestaTest.objects.filter(test_realizado=user_test, pregunta__tema=tema,
+                                                respuesta_seleccionada__es_correcta=True).count()
+        fallos = RespuestaTest.objects.filter(test_realizado=user_test, pregunta__tema=tema,
+                                                respuesta_seleccionada__es_correcta=False).count()
+        resultados.append({
+            'tema': tema.nombre,
+            'aciertos': aciertos*100/total_preguntas,
+            'fallos': fallos*100/total_preguntas,
+            'total': total_preguntas,
+        })
 
     # Verificar si el test pertenece al usuario logueado
     if user_test.usuario != request.user:
@@ -168,6 +238,7 @@ def detalle_test(request, test_id):
         'test': user_test,
         # 'preguntas_y_respuestas': preguntas_y_respuestas
         'detalle_test': detalles,
+        'resultados': resultados,
         'stats': stats,
     })
 

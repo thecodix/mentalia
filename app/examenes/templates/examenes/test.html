@@ -52,6 +52,10 @@
             {% csrf_token %}
             {% for pregunta in preguntas %}
                 <div class="pregunta-container">
+                    <!-- Recuadro del tema -->
+                    <div class="tema-recuadro">
+                        <p class="tema-texto">{{ pregunta.tema.nombre }}</p>
+                    </div>
                     <p class="pregunta-texto">Pregunta {{ forloop.counter }}: {{ pregunta.texto }}</p>
                     <!-- Botón de radio oculto para preguntas no contestadas -->
                     <div class="form-check d-none">

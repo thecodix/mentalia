@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap de la Asignatura</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% include 'examenes/navbar.html' %}
+    <div class="container mt-4">
+            <div class="centrado">
+            {% for seccion in secciones %}
+            <div class="seccion">
+                <h3>{{ seccion.nombre }}</h3>
+                <div class="subsecciones">
+                    {% for subseccion in seccion.subseccion_set.all %}
+                    <span class="subseccion {% if subseccion.progreso_usuario.completada %}completada{% endif %}">
+                        {{ subseccion.nombre }}
+                    </span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

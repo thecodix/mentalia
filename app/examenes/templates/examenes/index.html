@@ -54,6 +54,7 @@
                         {% for num in numero_preguntas_opciones %}
                             <option value="{{ num }}">{{ num }}</option>
                         {% endfor %}
+                        <option value="todos">Todos los temas</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Comenzar Test</button>
@@ -133,6 +134,10 @@
     function updateTemas(temas) {
         var selectTema = document.getElementById('tema');
         resetDropdown('tema');
+        var option_base = document.createElement('option');
+        option_base.value = 'todos';
+        option_base.text = 'Todos los temas';
+        selectTema.appendChild(option_base)
         temas.forEach(function(tema) {
             var option = document.createElement('option');
             option.value = tema.id;

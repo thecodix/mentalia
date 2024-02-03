@@ -1,5 +1,5 @@
 # services.py
-from .models import OpcionDeRespuesta, Pregunta, RespuestaTest, TestRealizado
+from .models import OpcionDeRespuesta, Pregunta, RespuestaTest, TestRealizado, UserProfile, AsignaturaUsuario
 
 
 def process_test_submission(user, post_data):
@@ -61,3 +61,14 @@ def process_test_submission(user, post_data):
         test_realizado.total_preguntas = respuestas_correctas + respuestas_falladas + respuestas_no_contestadas
     test_realizado.save()
     return test_realizado, preguntas_y_respuestas
+
+
+def asignar_experiencia(usuario, asignatura_id, puntos):
+    perfil_usuario = UserProfile.objects.get(user=usuario)
+    perfil_usuario.experiencia_total += puntos
+    perfil_usuario.save()
+
+    asignatura_usuario, creado = AsignaturaUsuario.objects.get_or_create(usuario=perfil_usuario, asignatura_id=asignatura_id)
+    asignatura_usuario.experiencia += puntos
+    asignatura_usuario.save()
+

@@ -8,13 +8,43 @@ from .models import (
     OpcionDeRespuesta,
     Pregunta,
     Tema,
-    TestRealizado,
+    TestRealizado, AsignaturaUsuario, Seccion, Subseccion, ProgresoUsuario,
 )
 
 admin.site.register(TestRealizado)
 admin.site.register(Carrera)
 admin.site.register(Curso)
+admin.site.register(ProgresoUsuario)
 
+
+@admin.register(Seccion)
+class SeccionAdmin(admin.ModelAdmin):
+    list_display = ('nombre', 'asignatura', 'orden')
+
+
+@admin.register(Subseccion)
+class SubseccionAdmin(admin.ModelAdmin):
+    list_display = ('nombre', 'seccion', 'orden')
+
+
+# @admin.register(ProgresoUsuario)
+# class ProgresoUsuarioAdmin(admin.ModelAdmin):
+#     list_display = ('usuario', 'subseccion', 'progreso')
+
+
+@admin.register(AsignaturaUsuario)
+class AsignaturaUsuarioAdmin(admin.ModelAdmin):
+    list_display = ('get_user_id', 'get_username', 'asignatura', 'experiencia')
+    search_fields = ('usuario__username', 'asignatura__nombre')
+    list_filter = ('asignatura',)
+
+    def get_username(self, obj):
+        return obj.usuario.user.username
+    get_username.short_description = 'Nombre de Usuario'
+
+    def get_user_id(self, obj):
+        return obj.usuario.user.id
+    get_user_id.short_description = 'ID de Usuario'
 
 @admin.register(Asignatura)
 class AsignaturaAdmin(admin.ModelAdmin):

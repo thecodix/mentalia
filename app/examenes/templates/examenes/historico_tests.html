@@ -35,6 +35,7 @@
                         <th>Correctas</th>
                         <th>Falladas</th>
                         <th>No Contestadas</th>
+                        <th>Feedback</th>
                         <th>Revisar</th>
                     </tr>
                 </thead>
@@ -49,6 +50,13 @@
                             <td>{{ test.preguntas_correctas }}</td>
                             <td>{{ test.preguntas_falladas }}</td>
                             <td>{{ test.preguntas_no_contestadas }}</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: {{ test.porcentaje_correctas }}%"></div>
+                                    <div class="progress-bar bg-danger" style="width: {{ test.porcentaje_falladas }}%"></div>
+                                    <div class="progress-bar bg-warning" style="width: {{ test.porcentaje_no_contestadas }}%"></div>
+                                </div>
+                            </td>
                             <td><a href="{% url 'detalle_test' test.id %}">Revisar</a></td>
                         </tr>
                     {% endfor %}
