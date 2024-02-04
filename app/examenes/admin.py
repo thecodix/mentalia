@@ -53,12 +53,13 @@ class AsignaturaAdmin(admin.ModelAdmin):
 
 @admin.register(Tema)
 class TemaAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'asignatura')
+    list_display = ('nombre', 'asignatura', 'id')
 
 
 @admin.register(Pregunta)
 class PreguntaAdmin(admin.ModelAdmin):
-    list_display = ('abreviar_texto', 'tema', 'id')
+    list_display = ('abreviar_texto',  'tema', 'id', 'active')
+    list_editable = ('active',)
 
     def abreviar_texto(self, obj):
         return obj.texto[:50]  # Muestra los primeros 50 caracteres

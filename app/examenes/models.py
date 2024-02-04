@@ -2,6 +2,8 @@ from django.conf import settings
 from django.db import models
 
 from django.contrib.auth.models import User
+from django.utils.translation import gettext_lazy as _
+
 
 class Carrera(models.Model):
     nombre = models.CharField(max_length=100)
@@ -37,6 +39,7 @@ class Tema(models.Model):
 class Pregunta(models.Model):
     tema = models.ForeignKey(Tema, on_delete=models.CASCADE)
     texto = models.TextField()
+    active = models.BooleanField(default=True)
 
     def __str__(self):
         return f"{self.tema.nombre} {self.id} - {self.texto[:30]}"
@@ -114,13 +117,24 @@ class AsignaturaUsuario(models.Model):
 class Seccion(models.Model):
     nombre = models.CharField(max_length=100)
     asignatura = models.ForeignKey(Asignatura, on_delete=models.CASCADE)
+    tema = models.ForeignKey('Tema', on_delete=models.CASCADE, related_name='secciones')
     orden = models.PositiveIntegerField()
+    color_fondo = models.CharField(max_length=7, default='#FFFFFF',
+                                   help_text=_('Color de fondo hexadecimal de la sección'))
+    icono_url = models.ImageField(upload_to='iconos_secciones/', default='iconos_secciones/default.png',
+                                  help_text=_('Icono representativo de la sección'))
 
     class Meta:
         ordering = ['orden']
 
     def __str__(self):
         return self.nombre
+
+    def get_icon_url(self):
+        if self.icono_url:
+            return settings.STATIC_URL + self.icono_url
+        else:
+            return settings.STATIC_URL + 'iconos_secciones/default.png'
 
 
 class Subseccion(models.Model):

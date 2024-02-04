@@ -11,21 +11,32 @@
 </head>
 <body>
     {% include 'examenes/navbar.html' %}
+    {% for tema in temas %}
     <div class="container mt-4">
-            <div class="centrado">
-            {% for seccion in secciones %}
-            <div class="seccion">
-                <h3>{{ seccion.nombre }}</h3>
-                <div class="subsecciones">
-                    {% for subseccion in seccion.subseccion_set.all %}
-                    <span class="subseccion {% if subseccion.progreso_usuario.completada %}completada{% endif %}">
-                        {{ subseccion.nombre }}
-                    </span>
-                    {% endfor %}
+        <div class="centrado">
+            <div class="row">
+                <div class="col-12 tema-title-container">
+                    <h2 class="tema-title">{{ tema.nombre }}</h2>
                 </div>
             </div>
-            {% endfor %}
+            <div class="row">
+                {% for seccion in tema.secciones.all %}
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="{% url 'detalle_seccion' seccion.id %}" class="card-link">
+                            <div class="card seccion-card">
+                                <div class="card-icon">
+                                    <img src="{% static seccion.icono_url %}" alt="{{ seccion.nombre }}">
+                                </div>
+                                <div class="card-content">
+                                    <h3>{{ seccion.nombre }}</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
+    {% endfor %}
 </body>
 </html>

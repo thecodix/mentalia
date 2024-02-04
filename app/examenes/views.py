@@ -10,7 +10,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 
 from .models import Asignatura, Carrera, Curso, Pregunta, Tema, TestRealizado, RespuestaTest, AsignaturaUsuario, \
     UserProfile, Seccion, ProgresoUsuario
-from .services import process_test_submission
+from .services import process_test_submission, finalizar_test
 
 
 def register(request):
@@ -29,7 +29,7 @@ def register(request):
 
 
 def seleccionar_asignatura(request):
-    perfil_usuario = UserProfile.objects.get(user=request.user)
+    perfil_usuario, created = UserProfile.objects.get_or_create(user=request.user)
     asignaturas_estudiadas = AsignaturaUsuario.objects.filter(usuario=perfil_usuario).values_list('asignatura', flat=True)
     asignaturas_para_desbloquear = Asignatura.objects.exclude(id__in=asignaturas_estudiadas)
     return render(request, 'examenes/seleccionar_asignatura.html', {'asignaturas': asignaturas_para_desbloquear})
@@ -55,17 +55,24 @@ def desbloquear_asignatura(request, asignatura_id):
 
 
 def roadmap(request, asignatura_id):
-    secciones = Seccion.objects.filter(asignatura_id=asignatura_id)
-    for seccion in secciones:
-        for subseccion in seccion.subseccion_set.all():
-            progreso, creado = ProgresoUsuario.objects.get_or_create(
-                usuario=request.user.userprofile,
-                subseccion=subseccion
-            )
-            subseccion.progreso_usuario = progreso
+    # Asumiendo que tienes un modelo Tema que está relacionado con Asignatura.
+    temas = Tema.objects.filter(asignatura_id=asignatura_id).prefetch_related('secciones')
+    for tema in temas:
+        for seccion in tema.secciones.all():
+            # Asumiendo que cada sección ya está relacionada con las subsecciones
+            for subseccion in seccion.subseccion_set.all():
+                progreso, creado = ProgresoUsuario.objects.get_or_create(
+                    usuario=request.user.userprofile,
+                    subseccion=subseccion
+                )
+                subseccion.progreso_usuario = progreso
 
-    return render(request, 'examenes/roadmap.html', {'secciones': secciones})
+    return render(request, 'examenes/roadmap.html', {'temas': temas})
 
+
+def detalle_seccion(request, seccion_id):
+    seccion = get_object_or_404(Seccion, pk=seccion_id)
+    return render(request, 'examenes/detalle_seccion.html', {'seccion': seccion})
 
 
 @login_required
@@ -151,10 +158,10 @@ def test(request):
     asignatura_id = request.GET.get('asignatura')
     temas_relacionados = Tema.objects.filter(asignatura_id=asignatura_id)
 
-    preguntas = list(Pregunta.objects.filter(tema__in=temas_relacionados))
+    preguntas = list(Pregunta.objects.filter(tema__in=temas_relacionados, active=True))
 
     if tema_id != 'todos':
-        preguntas = list(Pregunta.objects.filter(tema_id=tema_id))
+        preguntas = list(Pregunta.objects.filter(tema_id=tema_id, active=True))
 
     preguntas_seleccionadas = random.sample(preguntas, min(len(preguntas), int(numero_preguntas)))
     return render(request, 'examenes/test.html', {'preguntas': preguntas_seleccionadas})
@@ -175,6 +182,8 @@ def submit_test(request):
         'total_preguntas': test_realizado.total_preguntas,
         'porcentaje_aciertos': (test_realizado.preguntas_correctas / test_realizado.total_preguntas) * 100,
     }
+    finalizar_test(request, test_realizado)
+
     # Crear y guardar un nuevo TestRealizado
     return render(request, 'examenes/resultado_test.html', context)
 
@@ -212,15 +221,18 @@ def detalle_test(request, test_id):
     for tema in temas:
         total_preguntas = RespuestaTest.objects.filter(test_realizado=user_test, pregunta__tema=tema).count()
         if total_preguntas == 0:
-            resultados.append({'tema': tema.nombre, 'aciertos': 0, 'fallos': 0, 'total': 0})
+            continue
+            #resultados.append({'tema': tema.nombre, 'aciertos': 0, 'fallos': 0, 'total': 0})
         aciertos = RespuestaTest.objects.filter(test_realizado=user_test, pregunta__tema=tema,
                                                 respuesta_seleccionada__es_correcta=True).count()
         fallos = RespuestaTest.objects.filter(test_realizado=user_test, pregunta__tema=tema,
                                                 respuesta_seleccionada__es_correcta=False).count()
+        if not aciertos and not fallos:
+            continue
         resultados.append({
             'tema': tema.nombre,
-            'aciertos': aciertos*100/total_preguntas,
-            'fallos': fallos*100/total_preguntas,
+            'aciertos': aciertos*100/total_preguntas if total_preguntas else 0,
+            'fallos': fallos*100/total_preguntas if total_preguntas else 0,
             'total': total_preguntas,
         })
 

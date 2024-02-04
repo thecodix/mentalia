@@ -117,6 +117,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'app', 'examenes', 'static'),
+    # Aquí puedes añadir otros directorios si es necesario
+]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
@@ -127,3 +131,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'login'
 
 LOGIN_REDIRECT_URL = '/examenes'  # Reemplaza con el nombre de tu URL
+
+# URL que se utiliza para acceder a los archivos media a través del navegador
+MEDIA_URL = '/media/'
+
+# La ruta del sistema de archivos donde se guardan los archivos cargados
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

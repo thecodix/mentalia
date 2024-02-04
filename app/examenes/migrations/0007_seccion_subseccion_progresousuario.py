@@ -18,6 +18,9 @@ class Migration(migrations.Migration):
                 ('nombre', models.CharField(max_length=100)),
                 ('orden', models.PositiveIntegerField()),
                 ('asignatura', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='examenes.asignatura')),
+                ('tema', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='secciones',
+                                              to='examenes.tema')),
+
             ],
             options={
                 'ordering': ['orden'],

@@ -21,5 +21,6 @@ urlpatterns = [
     path('asignatura/desbloquear/<int:asignatura_id>/', views.desbloquear_asignatura, name='desbloquear_asignatura'),
 
     path('roadmap/<int:asignatura_id>/', views.roadmap, name='roadmap'),
+    path('seccion/<int:seccion_id>/', views.detalle_seccion, name='detalle_seccion'),
 
 ]

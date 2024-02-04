@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de la sección {{ seccion.nombre }} - {{ seccion.tema.nombre }}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% include 'examenes/navbar.html' %}
+    <div class="container mt-4">
+        <div class="centrado">
+            <h2>{{ seccion.tema.nombre }} - {{ seccion.nombre }}</h2>
+            <div class="teoria">
+                <h3>Teoría</h3>
+                <p>{{ seccion.teoria }}</p> <!-- Asumiendo que el modelo Seccion tiene un campo teoria -->
+            </div>
+            <div class="preguntas">
+                <h3>Preguntas</h3>
+                {% for pregunta in seccion.pregunta_set.all %}
+                <div class="pregunta">
+                    <p>{{ pregunta.texto }}</p>
+                    {% for opcion in pregunta.opcionderespuesta_set.all %}
+                    <div class="opcion">
+                        <input type="radio" id="opcion_{{ opcion.id }}" name="pregunta_{{ pregunta.id }}" value="{{ opcion.id }}">
+                        <label for="opcion_{{ opcion.id }}">{{ opcion.texto }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

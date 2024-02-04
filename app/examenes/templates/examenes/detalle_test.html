@@ -56,8 +56,11 @@
             <p class="text-center">Asignatura: {{ test.asignatura.nombre }}</p>
             <p class="text-center">Tema: {{ test.tema.nombre }}</p>
             <p class="text-center">Fecha: {{ test.fecha }}</p>
+            {% if resultados %}
             <div class="centrado">
-            <canvas id="radarChart"></canvas>
+                <canvas id="radarChart"></canvas>
+            </div>
+            {% endif %}
             <script>
                 var ctx = document.getElementById('radarChart').getContext('2d');
                 var resultados = {{ resultados|safe }};
@@ -117,7 +120,6 @@
                     }
                 });
             </script>
-            </div>
             <div class="centrado">
                 <div class="btn-group" role="group" aria-label="Filtros de Pregunta">
                     <button type="button" class="btn btn-secondary" onclick="filtrarPreguntas('todas')">Todas</button>

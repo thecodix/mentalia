@@ -1,9 +1,182 @@
+body {
+    background-color: #00090D; /* Color de fondo para toda la app */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .centrado {
     border: 1px solid #ddd;
+    background-color: #878787; /* Rosa pálido para .centrado */
     padding: 20px; /* Aumenta el padding */
-    margin-bottom: 20px;
     border-radius: 5px;
     max-width: 600px; /* Establece un ancho máximo */
-    margin-left: auto;  /* Centra el bloque */
-    margin-right: auto; /* Centra el bloque */
+    margin: 20px auto; /* Centra .centrado y añade margen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra ligera para dar profundidad */
+
 }
+
+/*.centrado .tema-title {*/
+/*    text-align: center; !* Centra el texto horizontalmente *!*/
+/*    font-size: 24px; !* Ajusta el tamaño del texto según necesites *!*/
+/*    color: #000; !* Cambia el color del texto según tu diseño *!*/
+/*    margin-top: 0; !* Ajusta según sea necesario para el espaciado superior *!*/
+/*    margin-bottom: 20px; !* Espaciado debajo del título para separarlo del contenido *!*/
+/*    font-weight: bold; !* Opcional: para hacer el título más prominente *!*/
+/*}*/
+.tema-title-container {
+    background-color: #00090D; /* Color de fondo más oscuro */
+    color: #ddd; /* Color de las letras más claro */
+    padding: 10px 0; /* Añadir algo de padding */
+    margin-bottom: 30px; /* Espacio debajo del contenedor del título */
+}
+
+.tema-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    /* Remover el color y text-shadow del .tema-title ya que se define en el contenedor */
+}
+
+
+
+.tema {
+    margin-bottom: 20px;
+}
+
+.seccion {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.teoria, .preguntas {
+    margin-bottom: 20px;
+}
+
+.pregunta {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.opcion {
+    margin: 5px 0;
+}
+
+.tema h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del título del tema */
+    margin-bottom: 1rem; /* Espacio debajo del título del tema */
+}
+
+.card {
+    cursor: pointer; /* Indica que es clickeable */
+}
+
+.card .card-title {
+    font-size: 1.2rem; /* Tamaño del título de la sección */
+}
+
+.card .btn {
+    background-color: #0056b3; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+}
+
+.card .btn:hover {
+    background-color: #004085; /* Color de fondo al pasar el mouse */
+}
+
+/*.seccion-card {*/
+/*    border-radius: 10px;*/
+/*    margin-bottom: 20px;*/
+/*    padding: 15px;*/
+/*    position: relative;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.seccion-card:hover {*/
+/*    !* Puedes añadir un efecto al pasar el mouse por encima para mejorar la interactividad *!*/
+/*    box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+/*    transform: translateY(-2px);*/
+/*}*/
+
+/*.icono-seccion {*/
+/*    width: 50px; !* O el tamaño que prefieras *!*/
+/*    height: auto;*/
+/*    display: block;*/
+/*    margin: 0 auto 10px; !* Centra el icono y añade espacio debajo *!*/
+/*}*/
+
+/*.titulo-seccion {*/
+/*    text-align: center;*/
+/*    margin: 0;*/
+/*    font-size: 1.2em; !* Ajusta el tamaño del texto *!*/
+/*}*/
+
+.seccion-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 3px solid #01170a;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.seccion-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    background-color: #00090D;
+    flex-grow: 2; /* La parte superior crece más que la inferior */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/*.card-content {*/
+/*    background-color: #cee5d1;*/
+/*    flex-grow: 1;*/
+/*    padding: 10px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.card-content h3 {*/
+/*    margin: 0;*/
+/*    font-size: 1em;*/
+/*    !*color: #333;*!*/
+/*}*/
+
+.card-content {
+    background-color: #cee5d1;
+    flex-grow: 0; /* Elimina el crecimiento automático */
+    height: 90px; /* Altura fija */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    overflow: hidden; /* Oculta el texto que sobrepase el área */
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.2; /* Ajusta la altura de línea para que quepan tres líneas */
+    white-space: break-spaces; /* Evita que el texto se envuelva */
+    overflow: hidden; /* Oculta el texto que sobrepase el área */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+}
+
