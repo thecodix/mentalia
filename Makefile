@@ -15,7 +15,7 @@ empty-migration:
 	python manage.py makemigrations examenes --empty
 
 dump-data:
-	docker exec -it mentalia-web-1 ./manage.py dumpdata examenes > data/datos_examenes.json
+	docker exec -it mentalia-web-1 ./manage.py dumpdata examenes > data/datos_24_07_02.json 2> data/warnings_24_07_02.log
 
 
 restore-data:

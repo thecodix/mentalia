@@ -1,4 +1,5 @@
 {% load static %}
+{% load examenes_filters %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,24 +15,17 @@
     <div class="container mt-4">
         <div class="centrado">
             <h2>{{ seccion.tema.nombre }} - {{ seccion.nombre }}</h2>
-            <div class="teoria">
-                <h3>Teoría</h3>
-                <p>{{ seccion.teoria }}</p> <!-- Asumiendo que el modelo Seccion tiene un campo teoria -->
-            </div>
-            <div class="preguntas">
-                <h3>Preguntas</h3>
-                {% for pregunta in seccion.pregunta_set.all %}
-                <div class="pregunta">
-                    <p>{{ pregunta.texto }}</p>
-                    {% for opcion in pregunta.opcionderespuesta_set.all %}
-                    <div class="opcion">
-                        <input type="radio" id="opcion_{{ opcion.id }}" name="pregunta_{{ pregunta.id }}" value="{{ opcion.id }}">
-                        <label for="opcion_{{ opcion.id }}">{{ opcion.texto }}</label>
+            {% for subseccion in subsecciones %}
+                <div class="subseccion">
+                    <h3>{{ subseccion.nombre }}</h3>
+                    <p><a href="{% url 'realizar_test_subseccion' subseccion.id %}">Realizar Test</a></p>
+                    <span class="badge badge-primary">{{ subseccion.preguntas.count }} preguntas</span>
+                    <div class="teoria">
+                        <h3>Teoría</h3>
+                        <div class="contenido-teorico">{{ subseccion.contenido_teorico|markdown|safe }}</div>
                     </div>
-                    {% endfor %}
                 </div>
-                {% endfor %}
-            </div>
+            {% endfor %}
         </div>
     </div>
 </body>

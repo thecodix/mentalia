@@ -180,3 +180,30 @@ a {
     text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
 }
 
+
+.subseccion {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.subseccion h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.teoria {
+    margin-top: 20px;
+}
+
+.contenido-teorico {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.badge-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+}

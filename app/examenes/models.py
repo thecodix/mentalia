@@ -3,6 +3,7 @@ from django.db import models
 
 from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
+from markdownx.models import MarkdownxField  # Asumiendo que utilizas django-markdownx para el campo markdown
 
 
 class Carrera(models.Model):
@@ -40,6 +41,7 @@ class Pregunta(models.Model):
     tema = models.ForeignKey(Tema, on_delete=models.CASCADE)
     texto = models.TextField()
     active = models.BooleanField(default=True)
+    subseccion = models.ForeignKey('Subseccion', on_delete=models.SET_NULL, null=True, blank=True, related_name='preguntas')
 
     def __str__(self):
         return f"{self.tema.nombre} {self.id} - {self.texto[:30]}"
@@ -140,6 +142,7 @@ class Seccion(models.Model):
 class Subseccion(models.Model):
     nombre = models.CharField(max_length=100)
     seccion = models.ForeignKey(Seccion, on_delete=models.CASCADE)
+    contenido_teorico = MarkdownxField(default='Texto')
     orden = models.PositiveIntegerField()
 
     class Meta:

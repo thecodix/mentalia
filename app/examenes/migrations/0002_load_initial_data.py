@@ -48,7 +48,11 @@ def cargar_datos(apps, schema_editor):
         elif entry['model'] == 'examenes.pregunta':
             fields = entry['fields']
             fields['tema'] = temas[fields['tema']]
-            pregunta = Pregunta.objects.create(**fields)
+            try:
+                pregunta = Pregunta.objects.create(**fields)
+            except Exception as ex:
+                print(f"pregunta {pregunta.subseccion}")
+                print(ex)
             preguntas[entry['pk']] = pregunta
 
         elif entry['model'] == 'examenes.opcionderespuesta':
@@ -56,10 +60,12 @@ def cargar_datos(apps, schema_editor):
             fields['pregunta'] = preguntas[fields['pregunta']]
             OpcionDeRespuesta.objects.create(**fields)
 
+
+
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('examenes', '0001_initial'),
+        ('examenes', '0010_pregunta_subseccion_subseccion_contenido_teorico'),
     ]
 
     operations = [

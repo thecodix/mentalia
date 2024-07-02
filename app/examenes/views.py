@@ -9,7 +9,7 @@ from django.http import HttpResponseNotAllowed, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .models import Asignatura, Carrera, Curso, Pregunta, Tema, TestRealizado, RespuestaTest, AsignaturaUsuario, \
-    UserProfile, Seccion, ProgresoUsuario
+    UserProfile, Seccion, ProgresoUsuario, Subseccion
 from .services import process_test_submission, finalizar_test
 
 
@@ -71,8 +71,24 @@ def roadmap(request, asignatura_id):
 
 
 def detalle_seccion(request, seccion_id):
-    seccion = get_object_or_404(Seccion, pk=seccion_id)
-    return render(request, 'examenes/detalle_seccion.html', {'seccion': seccion})
+    seccion = get_object_or_404(Seccion, id=seccion_id)
+    subsecciones = seccion.subseccion_set.prefetch_related(
+        'preguntas').all()  # Prefetch las preguntas para optimizar las consultas a la base de datos
+    return render(request, 'examenes/detalle_seccion.html', {'seccion': seccion, 'subsecciones': subsecciones})
+
+
+# Suponiendo que ya tienes una función que genera el contexto del test
+def realizar_test_subseccion(request, subseccion_id):
+    subseccion = get_object_or_404(Subseccion, id=subseccion_id)
+    preguntas = subseccion.preguntas.filter(active=True)  # Asegúrate de que el modelo Pregunta tiene un campo 'active'
+
+    context = {
+        'subseccion': subseccion,
+        'preguntas': preguntas,
+        # Agrega cualquier otro contexto necesario para tu test
+    }
+
+    return render(request, 'examenes/test.html', context)
 
 
 @login_required
@@ -199,9 +215,9 @@ def historico_tests(request):
     """Ordena los tests por fecha, mostrando primero los más recientes."""
     tests_realizados = TestRealizado.objects.filter(usuario=request.user).order_by('-fecha')
     for test in tests_realizados:
-        test.porcentaje_correctas = test.preguntas_correctas*100/test.total_preguntas
-        test.porcentaje_falladas = test.preguntas_falladas*100/test.total_preguntas
-        test.porcentaje_no_contestadas = test.preguntas_no_contestadas*100/test.total_preguntas
+        test.porcentaje_correctas = test.preguntas_correctas*100/max(test.total_preguntas, 1)
+        test.porcentaje_falladas = test.preguntas_falladas*100/max(test.total_preguntas, 1)
+        test.porcentaje_no_contestadas = test.preguntas_no_contestadas*100/max(test.total_preguntas, 1)
     return render(
         request,
         'examenes/historico_tests.html',

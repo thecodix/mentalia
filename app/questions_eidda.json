@@ -1,0 +1,1976 @@
+[
+    {
+        "model": "examenes.curso",
+        "pk": 2,
+        "fields": {
+            "nombre": "Cuarto",
+            "carrera": 1
+        }
+    },
+    {
+        "model": "examenes.asignatura",
+        "pk": 2,
+        "fields": {
+            "curso": 2,
+            "nombre": "Evaluación e intervención en las dificultades"
+        }
+    },
+    {
+        "model": "examenes.tema",
+        "pk": 2,
+        "fields": {
+            "nombre": "Tema 1 - EID",
+            "asignatura": 2
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 89,
+        "fields": {
+            "tema": 2,
+            "texto": "El desarrollo madurativo de la atención y la concentración necesario para facilitar el proceso de aprendizaje y favorecer la activación de los bloques funcionales siguientes (Luria 1973, 1980) tienes sus estructuras cerebrales en el córtex prefrontal. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 318,
+        "fields": {
+            "pregunta": 89,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 319,
+        "fields": {
+            "pregunta": 89,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 90,
+        "fields": {
+            "tema": 2,
+            "texto": "La neurogénesis hace referencia al moldeamiento de las dendritas para establecer conexiones con otras neuronas. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 320,
+        "fields": {
+            "pregunta": 90,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 321,
+        "fields": {
+            "pregunta": 90,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 91,
+        "fields": {
+            "tema": 2,
+            "texto": "El eje y plano horizontal está relacionado con la bipedestación, mientras que el eje y plano vertical medio se relaciona con la etapa de suelo. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 322,
+        "fields": {
+            "pregunta": 91,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 323,
+        "fields": {
+            "pregunta": 91,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 92,
+        "fields": {
+            "tema": 2,
+            "texto": "Entre los programas de desarrollo de habilidades visuales de tres a seis años, se proponen un conjunto de ejercicios y de juegos que favorecen el desarrollo neurofuncional que tiene relación directa con las habilidades de aprender idiomas. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 324,
+        "fields": {
+            "pregunta": 92,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 325,
+        "fields": {
+            "pregunta": 92,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 93,
+        "fields": {
+            "tema": 2,
+            "texto": "En la clase social deprivada, las familias están orientadas hacia el futuro y es más habitual el castigo como medida de disciplina. Por el contrario, en las clases media y alta existe una mayor preferencia por el presente y la disciplina está basada en premios y castigos simbólicos. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 326,
+        "fields": {
+            "pregunta": 93,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 327,
+        "fields": {
+            "pregunta": 93,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 94,
+        "fields": {
+            "tema": 2,
+            "texto": "El disfrute, frecuencia e intencionalidad de las conductas disruptivas son factores que determinan la existencia de un trastorno clínico. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 328,
+        "fields": {
+            "pregunta": 94,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 329,
+        "fields": {
+            "pregunta": 94,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 95,
+        "fields": {
+            "tema": 2,
+            "texto": "La clasificación de los trastornos del neurodesarrollo del DSM-V recoge el diagnóstico del trastorno de asperger, el síndrome de Rett y el trastorno del espectro autista. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 330,
+        "fields": {
+            "pregunta": 95,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 331,
+        "fields": {
+            "pregunta": 95,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 96,
+        "fields": {
+            "tema": 2,
+            "texto": "Según la definición de las DDAA dada por Santiuste y González-Pérez (2005), se hace una doble referencia curricular: primero a las disciplinas curriculares y después al resto de áreas instrumentales. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 332,
+        "fields": {
+            "pregunta": 96,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 333,
+        "fields": {
+            "pregunta": 96,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 97,
+        "fields": {
+            "tema": 2,
+            "texto": "El síndrome psicopático se caracteriza por desinhibición conductual, producido por una lesión en el córtex orbitofrontal."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 334,
+        "fields": {
+            "pregunta": 97,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 335,
+        "fields": {
+            "pregunta": 97,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 98,
+        "fields": {
+            "tema": 2,
+            "texto": "La activación duolateral simétrica, el control del núcleo medular alto y la activación de los canales de relación con el exterior son característicos de la etapa neonato-homolateral alterna."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 336,
+        "fields": {
+            "pregunta": 98,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 337,
+        "fields": {
+            "pregunta": 98,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 99,
+        "fields": {
+            "tema": 2,
+            "texto": "Las dificultades del aprendizaje están constituidas por un conjunto heterogéneo de problemas cuyo origen es, probablemente, una disfunción del sistema nervioso central."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 338,
+        "fields": {
+            "pregunta": 99,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 339,
+        "fields": {
+            "pregunta": 99,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 100,
+        "fields": {
+            "tema": 2,
+            "texto": "En la discalculia ideognóstica se observa una dificultad para hacer operaciones mentales, principalmente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 340,
+        "fields": {
+            "pregunta": 100,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 341,
+        "fields": {
+            "pregunta": 100,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 101,
+        "fields": {
+            "tema": 2,
+            "texto": "La discalculia lexical se caracteriza por la dificultad para leer símbolos matemáticos, principalmente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 342,
+        "fields": {
+            "pregunta": 101,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 343,
+        "fields": {
+            "pregunta": 101,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 102,
+        "fields": {
+            "tema": 2,
+            "texto": "Santiuste y González-Pérez (2005) indican que las pruebas pedagógicas estarían en el tipo de evaluación formal de las DAM, ya que son similares a las de cualquier profesor, pero están estandarizadas y cuentan con baremos poblacionales."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 344,
+        "fields": {
+            "pregunta": 102,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 345,
+        "fields": {
+            "pregunta": 102,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 103,
+        "fields": {
+            "tema": 2,
+            "texto": "Dado que una conducta determinada puede estar sustentada por múltiples sistemas funcionales (equipotencialidad) los efectos de una misma lesión cerebral pueden ser más devastadores en un niño que en un adulto."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 346,
+        "fields": {
+            "pregunta": 103,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 347,
+        "fields": {
+            "pregunta": 103,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 104,
+        "fields": {
+            "tema": 2,
+            "texto": "Existe mayor probabilidad de heredar la inteligencia de la madre, ya que muchas capacidades cognitivas se ubican en el cromosoma X."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 348,
+        "fields": {
+            "pregunta": 104,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 349,
+        "fields": {
+            "pregunta": 104,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 105,
+        "fields": {
+            "tema": 2,
+            "texto": "El tendido supino es un signo característico de la contralateralidad. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 350,
+        "fields": {
+            "pregunta": 105,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 351,
+        "fields": {
+            "pregunta": 105,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 106,
+        "fields": {
+            "tema": 2,
+            "texto": "En los trastornos del desarrollo, suponen problemas psicopatológicos las dificultades de aprendizaje de la lectura, la escritura y las matemáticas. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 352,
+        "fields": {
+            "pregunta": 106,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 353,
+        "fields": {
+            "pregunta": 106,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 107,
+        "fields": {
+            "tema": 2,
+            "texto": "En términos psicolingüísticos la dislexia evolutiva se relaciona con una lesión que afecta a determinados componentes del lenguaje, en función de la corteza cerebral afectada"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 354,
+        "fields": {
+            "pregunta": 107,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 355,
+        "fields": {
+            "pregunta": 107,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 108,
+        "fields": {
+            "tema": 2,
+            "texto": "A Helena le diagnosticaron dislexia fonológica a los 6 años, presentando problemas principalmente de lectura de palabras irregulares y sujetas a reglas. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 356,
+        "fields": {
+            "pregunta": 108,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 357,
+        "fields": {
+            "pregunta": 108,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 109,
+        "fields": {
+            "tema": 2,
+            "texto": "La diferencia fundamental entre DDAA y trastornos del desarrollo es que este se relaciona con una alteración o discapacidad en el plano biológico, mientras en las DDAA se da en el plano orgánico. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 358,
+        "fields": {
+            "pregunta": 109,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 359,
+        "fields": {
+            "pregunta": 109,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 110,
+        "fields": {
+            "tema": 2,
+            "texto": "Estudios con resonancia magnética funcional confirman dos circuitos distintos implicados en la lectura: el ventral (fascículo fronto-occipital inferior) o giro fusiforme, para la lectura de palabras conocidas y el superior (fascículo arqueado) o giro angular, implicado en la lectura de palabras nuevas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 360,
+        "fields": {
+            "pregunta": 110,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 361,
+        "fields": {
+            "pregunta": 110,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 111,
+        "fields": {
+            "tema": 2,
+            "texto": "El reconocimiento de la palabra constituye uno de los principales déficits de la dislexia, implicando alteraciones en el acceso al procesamiento perceptivo. ???"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 362,
+        "fields": {
+            "pregunta": 111,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 363,
+        "fields": {
+            "pregunta": 111,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 112,
+        "fields": {
+            "tema": 2,
+            "texto": "Rivas y Fernández (2011) conceptualizan la dislexia como un trastorno del lenguaje que se manifiesta con dificultad respecto al aprendizaje de la lectura y sus usos generales, como, por ejemplo, en la escritura"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 364,
+        "fields": {
+            "pregunta": 112,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 365,
+        "fields": {
+            "pregunta": 112,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 113,
+        "fields": {
+            "tema": 2,
+            "texto": "Cometer más errores en las palabras funcionales que en las de contenido es característico de la dislexia léxica. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 366,
+        "fields": {
+            "pregunta": 113,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 367,
+        "fields": {
+            "pregunta": 113,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 114,
+        "fields": {
+            "tema": 2,
+            "texto": "En el tipo de dislexia con dificultades en la ruta léxica, los errores de regularización suponen lectura lenta, titubeo y tanteo de pronunciar la palabra esperando acertar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 368,
+        "fields": {
+            "pregunta": 114,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 369,
+        "fields": {
+            "pregunta": 114,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 115,
+        "fields": {
+            "tema": 2,
+            "texto": "Las conductas de desobediencia generan situaciones de conflicto en el aula, son tendientes a desaparecer por sí mismas con la edad y, solo cuando llegan a ser muy graves, reciben la denominación de trastorno negativista desafiante."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 370,
+        "fields": {
+            "pregunta": 115,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 371,
+        "fields": {
+            "pregunta": 115,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 116,
+        "fields": {
+            "tema": 2,
+            "texto": "Los errores derivacionales son característicos de la dislexia superficial. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 372,
+        "fields": {
+            "pregunta": 116,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 373,
+        "fields": {
+            "pregunta": 116,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 117,
+        "fields": {
+            "tema": 2,
+            "texto": "El método analítico para el entrenamiento de la lectoescritura tiene como principal crítica que retrasan la adquisición de los automatismos implícitos en los niveles elementales."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 374,
+        "fields": {
+            "pregunta": 117,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 375,
+        "fields": {
+            "pregunta": 117,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 118,
+        "fields": {
+            "tema": 2,
+            "texto": "El concepto de pluripotencialidad supone que cuando un área resulta dañada, pueden verse alteradas varias conductas, en dependencia de cuantos sean los sistemas de los que el área en cuestión forma parte."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 376,
+        "fields": {
+            "pregunta": 118,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 377,
+        "fields": {
+            "pregunta": 118,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 119,
+        "fields": {
+            "tema": 2,
+            "texto": "La dificultad para extraer el significado de las palabras homófonas es característico de la dislexia"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 378,
+        "fields": {
+            "pregunta": 119,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 379,
+        "fields": {
+            "pregunta": 119,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 120,
+        "fields": {
+            "tema": 2,
+            "texto": "La técnica de lectura conjunta o en sombra, supone un ejemplo de intervención para la dislexia del enfoque funcional de la psicología cognitiva, considerando el procesamiento fonológico como su principal déficit"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 380,
+        "fields": {
+            "pregunta": 120,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 381,
+        "fields": {
+            "pregunta": 120,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 121,
+        "fields": {
+            "tema": 2,
+            "texto": "Los métodos alfabéticos, fónicos y silábicos se engloban dentro de los métodos sintéticos para el entrenamiento de la lectoescritura"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 382,
+        "fields": {
+            "pregunta": 121,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 383,
+        "fields": {
+            "pregunta": 121,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 122,
+        "fields": {
+            "tema": 2,
+            "texto": "Las DDAA se manifiestan primariamente con problemas en el ámbito lingüístico y con trastornos conductuales como principales factores afectados. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 384,
+        "fields": {
+            "pregunta": 122,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 385,
+        "fields": {
+            "pregunta": 122,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 123,
+        "fields": {
+            "tema": 2,
+            "texto": "El método sintético para el tratamiento de la lectoescritura se propone especialmente para el aprendizaje de idiomas transparentes como el castellano."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 386,
+        "fields": {
+            "pregunta": 123,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 387,
+        "fields": {
+            "pregunta": 123,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 124,
+        "fields": {
+            "tema": 2,
+            "texto": "En el trastorno lectoescritor, según el modelo psicolingüístico, si las dificultades son auditivas, la intervención sería utilizando el método sintético que minimizaría la rotulación verbal de letras y palabras enteras. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 388,
+        "fields": {
+            "pregunta": 124,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 389,
+        "fields": {
+            "pregunta": 124,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 125,
+        "fields": {
+            "tema": 2,
+            "texto": "En el enfoque neuropsicológico de Bakker, para la intervención psicoeducativa de la dislexia en el aula, propone que, en los casos que denomina dislexia P (perceptivos), debe basarse en la estimulación del hemisferio cerebral izquierdo, por ejemplo, presentando letras tridimensionales para que las palpen con la mano derecha."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 390,
+        "fields": {
+            "pregunta": 125,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 391,
+        "fields": {
+            "pregunta": 125,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 126,
+        "fields": {
+            "tema": 2,
+            "texto": "La realización de dictados en clase es una técnica habitual y aconsejable para la intervención y enseñanza de la ortografía. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 392,
+        "fields": {
+            "pregunta": 126,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 393,
+        "fields": {
+            "pregunta": 126,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 127,
+        "fields": {
+            "tema": 2,
+            "texto": "La dislexia visual se caracteriza por problemas en la identificación de las características posicionales de las letras."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 394,
+        "fields": {
+            "pregunta": 127,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 395,
+        "fields": {
+            "pregunta": 127,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 128,
+        "fields": {
+            "tema": 2,
+            "texto": "Según el modelo de Seymour y MacGregor (1984), los procesadores semántico y fonológico tienen lugar en el momento previo a la adquisición lectora, mientras que el grafémico y el ortográfico tienen lugar durante la adquisición de la lectura."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 396,
+        "fields": {
+            "pregunta": 128,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 397,
+        "fields": {
+            "pregunta": 128,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 129,
+        "fields": {
+            "tema": 2,
+            "texto": "La lectura de palabras de alta y baja frecuencia igualadas en número es especialmente relevante para la evaluación de la ruta léxica o visual. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 398,
+        "fields": {
+            "pregunta": 129,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 399,
+        "fields": {
+            "pregunta": 129,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 130,
+        "fields": {
+            "tema": 2,
+            "texto": "En el procedimiento de lecturas repetidas para el desarrollo de la fluidez lectora, tras la primera lectura en voz alta del niño, se propone un objetivo de tiempo y exactitud a alcanzar. La retroalimentación del tiempo y errores se da siempre tras cada intento y hasta que se haya conseguido el objetivo. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 400,
+        "fields": {
+            "pregunta": 130,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 401,
+        "fields": {
+            "pregunta": 130,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 131,
+        "fields": {
+            "tema": 2,
+            "texto": "En los métodos analíticos, el flujo de información discurre de arriba-abajo, facilitando el dominio de las partes elementales antes que del conjunto. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 402,
+        "fields": {
+            "pregunta": 131,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 403,
+        "fields": {
+            "pregunta": 131,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 132,
+        "fields": {
+            "tema": 2,
+            "texto": "Solicitar al niño exagerar la pronunciación de un determinado sonido es una técnica utilizada para corregir errores de rotación. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 404,
+        "fields": {
+            "pregunta": 132,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 405,
+        "fields": {
+            "pregunta": 132,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 133,
+        "fields": {
+            "tema": 2,
+            "texto": "La dislexia tiene una base biológica y genética, mientras que la disortografía supone una dificultad de carácter evolutivo asociada, en muchos casos, al propio ritmo de maduración y aprendizaje del niño."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 406,
+        "fields": {
+            "pregunta": 133,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 407,
+        "fields": {
+            "pregunta": 133,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 134,
+        "fields": {
+            "tema": 2,
+            "texto": "La escritura al dictado se relaciona con el área 37 de Brodmann."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 408,
+        "fields": {
+            "pregunta": 134,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 409,
+        "fields": {
+            "pregunta": 134,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 135,
+        "fields": {
+            "tema": 2,
+            "texto": "La disgrafía se refiere a un conjunto de errores de la escritura que afectan a la palabra y no a su trazado o grafía. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 410,
+        "fields": {
+            "pregunta": 135,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 411,
+        "fields": {
+            "pregunta": 135,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 136,
+        "fields": {
+            "tema": 2,
+            "texto": "Según el DSM V (APA, 2013), algunas subhabilidades del trastorno específico del aprendizaje que pueden estar alteradas en la escritura son: dificultades en las reglas de puntuación, en la claridad y en la asociación de ideas. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 412,
+        "fields": {
+            "pregunta": 136,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 413,
+        "fields": {
+            "pregunta": 136,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 137,
+        "fields": {
+            "tema": 2,
+            "texto": "Según Rivas y Fernández (2011), la sustitución de fonemas vocálicos y/o consonánticos afines por el X y/o modo de articulación, como “sebtimo” por “séptimo”, sería una característica de la disortografía relacionada con el contenido. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 414,
+        "fields": {
+            "pregunta": 137,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 415,
+        "fields": {
+            "pregunta": 137,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 138,
+        "fields": {
+            "tema": 2,
+            "texto": "La alteración de la secuenciación fonemática del discurso, generando errores de omisión-separación es característico de la disortografía dinámica. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 416,
+        "fields": {
+            "pregunta": 138,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 417,
+        "fields": {
+            "pregunta": 138,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 139,
+        "fields": {
+            "tema": 2,
+            "texto": "El modelado sin modelos en vivo de tipo encubierto consiste en imaginar escenas ansiógenas y, a continuación, representar mentalmente a un modelo poderoso para el niño que lleva a cabo la conducta temida."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 418,
+        "fields": {
+            "pregunta": 139,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 419,
+        "fields": {
+            "pregunta": 139,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 140,
+        "fields": {
+            "tema": 2,
+            "texto": "Los ficheros cacográficos son un inventario de errores cometidos frecuentemente por el alumno en el que al lado se pone la palabra correcta. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 420,
+        "fields": {
+            "pregunta": 140,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 421,
+        "fields": {
+            "pregunta": 140,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 141,
+        "fields": {
+            "tema": 2,
+            "texto": "Dibujar en una cuadrícula la mitad que falta de un dibujo, supone una estrategia de grafomotricidad-simetría incluida en las pautas de intervención psicoeducativa en el aula para la disortografía. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 422,
+        "fields": {
+            "pregunta": 141,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 423,
+        "fields": {
+            "pregunta": 141,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 142,
+        "fields": {
+            "tema": 2,
+            "texto": "En matemáticas, las tareas de la memoria de trabajo como el mantenimiento de resultados intermedios, la planificación, la ordenación temporal de componentes de las tareas, la comprobación de resultados y la corrección de errores tienen su mayor responsable cortical en el lóbulo frontal dorsolateral."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 424,
+        "fields": {
+            "pregunta": 142,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 425,
+        "fields": {
+            "pregunta": 142,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 143,
+        "fields": {
+            "tema": 2,
+            "texto": "El procesamiento de los números arábigos se realiza en ambos hemisferios de la corteza occipito-temporal, mientras que los números verbales se procesan en el hemisferio izquierdo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 426,
+        "fields": {
+            "pregunta": 143,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 427,
+        "fields": {
+            "pregunta": 143,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 144,
+        "fields": {
+            "tema": 2,
+            "texto": "El déficit de las conexiones neuronales asociadas a la discalculia se encuentra principalmente en el lóbulo occipital y sus conexiones funcionales con la corteza prefrontal. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 428,
+        "fields": {
+            "pregunta": 144,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 429,
+        "fields": {
+            "pregunta": 144,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 145,
+        "fields": {
+            "tema": 2,
+            "texto": "Según Dehaene et al. (1999), la información numérica procesada por el sistema cuantitativo no verbal está asociada al segmento horizontal del surco intraparietal (HIPS), que se activa más cuando se realiza una estimación aproximada que cuando se realiza un cálculo exacto."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 430,
+        "fields": {
+            "pregunta": 145,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 431,
+        "fields": {
+            "pregunta": 145,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 146,
+        "fields": {
+            "tema": 2,
+            "texto": "En las conclusiones de la serie de experimentos con bebés de cinco meses de Wynn (1992) se sugiere que, al mirar más tiempo cuando aparecían los juguetes con un resultado lógico, los bebés muestran poseer una capacidad innata para el procesamiento numérico. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 432,
+        "fields": {
+            "pregunta": 146,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 433,
+        "fields": {
+            "pregunta": 146,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 147,
+        "fields": {
+            "tema": 2,
+            "texto": "El aprendizaje de las matemáticas en las distintas etapas escolares (infantil, primaria y secundaria) es interdependiente y jerárquico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 434,
+        "fields": {
+            "pregunta": 147,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 435,
+        "fields": {
+            "pregunta": 147,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 148,
+        "fields": {
+            "tema": 2,
+            "texto": "Poner el énfasis en las actitudes e interés del alumno y en la dificultad propia de la asignatura, supone una hipótesis etiológica evolutiva de las DAM. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 436,
+        "fields": {
+            "pregunta": 148,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 437,
+        "fields": {
+            "pregunta": 148,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 149,
+        "fields": {
+            "tema": 2,
+            "texto": "Al tener conexiones con el sistema límbico, las estructuras frontales también intervienen en la regulación de la respuesta emocional, la motivación y la conducta social."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 438,
+        "fields": {
+            "pregunta": 149,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 439,
+        "fields": {
+            "pregunta": 149,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 150,
+        "fields": {
+            "tema": 2,
+            "texto": "En caso de lesión en alguna de las áreas relacionadas con el segundo bloque funcional propuesto por Luria, se observaría un fallo general de la entrada de información, conduciendo a una alteración de los procesos de atención, vigilia y memoria. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 440,
+        "fields": {
+            "pregunta": 150,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 441,
+        "fields": {
+            "pregunta": 150,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 151,
+        "fields": {
+            "tema": 2,
+            "texto": "En el DSM V (APA, 2013) se hace una clara diferenciación entre la disgrafía y la disortografía. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 442,
+        "fields": {
+            "pregunta": 151,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 443,
+        "fields": {
+            "pregunta": 151,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 152,
+        "fields": {
+            "tema": 2,
+            "texto": "Colocar el mismo número de piezas en posiciones diferentes y preguntar al alumno en qué dibujo hay más o menos elementos es una tarea para el entrenamiento de las seriaciones. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 444,
+        "fields": {
+            "pregunta": 152,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 445,
+        "fields": {
+            "pregunta": 152,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 153,
+        "fields": {
+            "tema": 2,
+            "texto": "Respecto al bullying, investigaciones internacionales sugieren que los ataques se producen en mayor medida en el desplazamiento a la escuela que en la propia escuela. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 446,
+        "fields": {
+            "pregunta": 153,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 447,
+        "fields": {
+            "pregunta": 153,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 154,
+        "fields": {
+            "tema": 2,
+            "texto": "La posición sociométrica o estatus social se utiliza para evaluar la deprivación sociocultural. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 448,
+        "fields": {
+            "pregunta": 154,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 449,
+        "fields": {
+            "pregunta": 154,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 155,
+        "fields": {
+            "tema": 2,
+            "texto": "El escaso conocimiento de los propios sentimientos facilita el diagnóstico de la ansiedad por separación. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 450,
+        "fields": {
+            "pregunta": 155,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 451,
+        "fields": {
+            "pregunta": 155,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 156,
+        "fields": {
+            "tema": 2,
+            "texto": "Relacionado con los déficits socioafectivos, los resultados han mostrado que los sujetos expuestos al estrés durante la niñez y la adolescencia tenían menores concentraciones de neurotransmisores en el hipocampo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 452,
+        "fields": {
+            "pregunta": 156,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 453,
+        "fields": {
+            "pregunta": 156,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 157,
+        "fields": {
+            "tema": 2,
+            "texto": "El programa de Kendall para la intervención de la fobia escolar entrena al niño para reconocer las respuestas físicas que se desencadenan ante sus emociones negativas y para que reconozca las autoverbalizaciones asociadas a sentimientos negativos con el consiguiente desarrollo de habilidades de solución de problemas para modificar esas autoverbalizaciones. En una segunda fase, se ponen en práctica dichas habilidades mediante una exposición gradual a situaciones ansiógenas, tanto imaginariamente como en vivo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 454,
+        "fields": {
+            "pregunta": 157,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 455,
+        "fields": {
+            "pregunta": 157,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 158,
+        "fields": {
+            "tema": 2,
+            "texto": "La dificultad para separar las secuencias gráficas pertenecientes a cada secuencia gráfica mediante los espacios en blanco correspondientes son errores visoespaciales. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 456,
+        "fields": {
+            "pregunta": 158,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 457,
+        "fields": {
+            "pregunta": 158,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 159,
+        "fields": {
+            "tema": 2,
+            "texto": "La prueba PEREL (Maldonado et al, 1992) para evaluación del retraso en la lectura, es aplicable a niños de 5 a 8 años. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 458,
+        "fields": {
+            "pregunta": 159,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 459,
+        "fields": {
+            "pregunta": 159,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 160,
+        "fields": {
+            "tema": 2,
+            "texto": "Entre las pruebas formales para la evaluación de la disortografía, la Prueba de Escritura de Terrasa (1997) tiene aplicación también para niños de primer ciclo de educación primaria."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 460,
+        "fields": {
+            "pregunta": 160,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 461,
+        "fields": {
+            "pregunta": 160,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 161,
+        "fields": {
+            "tema": 2,
+            "texto": "El giro angular izquierdo interviene principalmente en la estimación de resultados aproximados. "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 462,
+        "fields": {
+            "pregunta": 161,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 463,
+        "fields": {
+            "pregunta": 161,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 162,
+        "fields": {
+            "tema": 2,
+            "texto": "Según el modelo neuropsicológico de la dislexia, la participación de las áreas corticales de los lóbulos frontales y el plano temporal son clave para la correcta percepción y funcionamiento cognitivo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 464,
+        "fields": {
+            "pregunta": 162,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 465,
+        "fields": {
+            "pregunta": 162,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 163,
+        "fields": {
+            "tema": 2,
+            "texto": "Para realizar los procesos visuales, auditivos y táctiles, esenciales en la aplicación de metodologías de aprendizaje de nuevos conocimientos basadas en la sensorialidad, participan los lóbulos occipital, temporal y parietal, del bloque tercero propuesto por Luria (1973, 1980) "
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 466,
+        "fields": {
+            "pregunta": 163,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 467,
+        "fields": {
+            "pregunta": 163,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    }
+]

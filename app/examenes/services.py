@@ -68,6 +68,8 @@ def finalizar_test(request, test_realizado):
     asignatura_usuario = AsignaturaUsuario.objects.get(usuario__user=request.user, asignatura=test_realizado.asignatura)
 
     # Añadir puntos de experiencia a la asignatura específica
+    if not asignatura_usuario.experiencia:
+        asignatura_usuario.experiencia = 0
     asignatura_usuario.experiencia += EXPERIENCIA
     asignatura_usuario.save()
 

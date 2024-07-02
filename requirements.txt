@@ -1,6 +1,9 @@
 bandit==1.7.7
 django==5.0.1
+django-markdownx==4.0.7
+django-markdownify==0.9.3
 isort==5.13.2
+Markdown==3.5.2
 pylint==3.0.3
 pylint-django==2.5.5
 pillow==10.2.0

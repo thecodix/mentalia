@@ -1,0 +1,5124 @@
+[
+    {
+        "model": "examenes.pregunta",
+        "pk": 440,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud se realiza a través de una proceso multidisciplinar"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 983,
+        "fields": {
+            "pregunta": 440,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 984,
+        "fields": {
+            "pregunta": 440,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 441,
+        "fields": {
+            "tema": 14,
+            "texto": "Las creencias personales no influyen directamente sobre la psicología de la salud"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 985,
+        "fields": {
+            "pregunta": 441,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 986,
+        "fields": {
+            "pregunta": 441,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 442,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud tiene 3 áreas o dimensiones que se destacan: la salud, la enfermedad y los cuidados de la salud"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 987,
+        "fields": {
+            "pregunta": 442,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 988,
+        "fields": {
+            "pregunta": 442,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 443,
+        "fields": {
+            "tema": 14,
+            "texto": "No es necesario que los Psicólogos sanitarios tengan conocimientos médicos"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 989,
+        "fields": {
+            "pregunta": 443,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 990,
+        "fields": {
+            "pregunta": 443,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 444,
+        "fields": {
+            "tema": 14,
+            "texto": "Según Matarazzo -1982-, la Psicología de la Salud pretende mantener y mejorar la salud, promover actuaciones como el ejercicio físico"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 991,
+        "fields": {
+            "pregunta": 444,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 992,
+        "fields": {
+            "pregunta": 444,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 445,
+        "fields": {
+            "tema": 14,
+            "texto": "Se recomienda el tratamiento llevado a cabo por un único terapeuta"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 993,
+        "fields": {
+            "pregunta": 445,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 994,
+        "fields": {
+            "pregunta": 445,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 446,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina psicosomática propone que la conjunción cuerpo y mente origina las enfermedades psicofísiologicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 995,
+        "fields": {
+            "pregunta": 446,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 996,
+        "fields": {
+            "pregunta": 446,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 447,
+        "fields": {
+            "tema": 14,
+            "texto": "No es tarea de la psicología de la salud mejorar la atención médica y las políticas de salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 997,
+        "fields": {
+            "pregunta": 447,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 998,
+        "fields": {
+            "pregunta": 447,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 448,
+        "fields": {
+            "tema": 14,
+            "texto": "El contexto y el ambiente son importantes en la conducta y en el organismo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 999,
+        "fields": {
+            "pregunta": 448,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1000,
+        "fields": {
+            "pregunta": 448,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 449,
+        "fields": {
+            "tema": 14,
+            "texto": "Algunas actitudes disfuncionales que están relacionadas con el ámbito de la salud, prediciendo enfermedades son: depender de lo que puedan decir los demás, ser incapaz de afrontar la soledad, ser excesivamente perfeccionista, el egoísmo, los pensamientos distorsionados de todo o nada."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1001,
+        "fields": {
+            "pregunta": 449,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1002,
+        "fields": {
+            "pregunta": 449,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 450,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los objetivos de la psicología de la salud es mantener y mejorar la salud"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1003,
+        "fields": {
+            "pregunta": 450,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1004,
+        "fields": {
+            "pregunta": 450,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 451,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no abarca un plano Holístico o integral"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1005,
+        "fields": {
+            "pregunta": 451,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1006,
+        "fields": {
+            "pregunta": 451,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 452,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud se centra en los contextos"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1007,
+        "fields": {
+            "pregunta": 452,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1008,
+        "fields": {
+            "pregunta": 452,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 453,
+        "fields": {
+            "tema": 14,
+            "texto": "En la observación los datos son analizados psicométricamente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1009,
+        "fields": {
+            "pregunta": 453,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1010,
+        "fields": {
+            "pregunta": 453,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 454,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica pertenece al ámbito mecanicista, por lo que se centra más en los síntomas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1011,
+        "fields": {
+            "pregunta": 454,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1012,
+        "fields": {
+            "pregunta": 454,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 455,
+        "fields": {
+            "tema": 14,
+            "texto": "El término “comorbilidad” hace referencia a la presencia de una sola condición crónica."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1013,
+        "fields": {
+            "pregunta": 455,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1014,
+        "fields": {
+            "pregunta": 455,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 456,
+        "fields": {
+            "tema": 14,
+            "texto": "Para detectar el origen de la situación de problema en terapia es conveniente trabajar en equipo más que individual."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1015,
+        "fields": {
+            "pregunta": 456,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1016,
+        "fields": {
+            "pregunta": 456,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 457,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica es una ciencia mecanicista pero no se centra en los síntomas individuales de la persona, sino en el problema general."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1017,
+        "fields": {
+            "pregunta": 457,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1018,
+        "fields": {
+            "pregunta": 457,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 458,
+        "fields": {
+            "tema": 14,
+            "texto": "Desde lo descriptivo se puede acceder a un plano causal o explicativo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1019,
+        "fields": {
+            "pregunta": 458,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1020,
+        "fields": {
+            "pregunta": 458,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 459,
+        "fields": {
+            "tema": 14,
+            "texto": "La comorbilidad es una enfermedad"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1021,
+        "fields": {
+            "pregunta": 459,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1022,
+        "fields": {
+            "pregunta": 459,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 460,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los objetivos de la psicologia de la salud es concienciar sobre los factores de riesgo que nos hacen mas vulnerables a las enfermedades:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1023,
+        "fields": {
+            "pregunta": 460,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1024,
+        "fields": {
+            "pregunta": 460,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 461,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina psicosomatica se basa en la etiologia estrictamente fisica de las enfermedades:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1025,
+        "fields": {
+            "pregunta": 461,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1026,
+        "fields": {
+            "pregunta": 461,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 462,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia que se basa plenamente en la observación:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1027,
+        "fields": {
+            "pregunta": 462,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1028,
+        "fields": {
+            "pregunta": 462,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 463,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicologia de la salud emprende un camino interdisciplinar, interviene no solo la psicología, sino también otras ciencias"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1029,
+        "fields": {
+            "pregunta": 463,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1030,
+        "fields": {
+            "pregunta": 463,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 464,
+        "fields": {
+            "tema": 14,
+            "texto": "La observación tiene que estar avalada por una prueba fisica:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1031,
+        "fields": {
+            "pregunta": 464,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1032,
+        "fields": {
+            "pregunta": 464,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 465,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicologia de la salud es una disciplina mecanicista muy centrada en los sintomas:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1033,
+        "fields": {
+            "pregunta": 465,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1034,
+        "fields": {
+            "pregunta": 465,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 466,
+        "fields": {
+            "tema": 14,
+            "texto": "El trabajo individual dificulta la tarea del psicologo de la salud"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1035,
+        "fields": {
+            "pregunta": 466,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1036,
+        "fields": {
+            "pregunta": 466,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 467,
+        "fields": {
+            "tema": 14,
+            "texto": "Existen tres dimensiones en la psicología de la salud: la salud, la enfermedad y el afrontamiento de la enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1037,
+        "fields": {
+            "pregunta": 467,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1038,
+        "fields": {
+            "pregunta": 467,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 468,
+        "fields": {
+            "tema": 14,
+            "texto": "En Psicología de la Salud se puede considerar más fácil el trabajo en equipo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1039,
+        "fields": {
+            "pregunta": 468,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1040,
+        "fields": {
+            "pregunta": 468,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 469,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los comportamientos compartidos entre humanos y otros animales es el pensamiento."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1041,
+        "fields": {
+            "pregunta": 469,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1042,
+        "fields": {
+            "pregunta": 469,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 470,
+        "fields": {
+            "tema": 14,
+            "texto": "Los datos obtenidos en la observación posteriormente son analizados psicométricamente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1043,
+        "fields": {
+            "pregunta": 470,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1044,
+        "fields": {
+            "pregunta": 470,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 471,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es importante en dos dimensiones: en la salud y en los cuidados de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1045,
+        "fields": {
+            "pregunta": 471,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1046,
+        "fields": {
+            "pregunta": 471,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 472,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud pertenece a la psicología y se origina de diversos ámbitos y disciplinas como la educación."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1047,
+        "fields": {
+            "pregunta": 472,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1048,
+        "fields": {
+            "pregunta": 472,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 473,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica emplea un ámbito holístico centrado en los síntomas subyacentes y en curar una enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1049,
+        "fields": {
+            "pregunta": 473,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1050,
+        "fields": {
+            "pregunta": 473,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 474,
+        "fields": {
+            "tema": 14,
+            "texto": "La observación suele acompañarse de otros métodos como las pruebas biomédicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1051,
+        "fields": {
+            "pregunta": 474,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1052,
+        "fields": {
+            "pregunta": 474,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 475,
+        "fields": {
+            "tema": 14,
+            "texto": "En los primeros contactos con el paciente el terapeuta primero crea una hipótesis sobre las conductas problema y después realiza una entrevista."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1053,
+        "fields": {
+            "pregunta": 475,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1054,
+        "fields": {
+            "pregunta": 475,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 476,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud se ayuda de otras ciencias para generar en el paciente el cambio necesario."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1055,
+        "fields": {
+            "pregunta": 476,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1056,
+        "fields": {
+            "pregunta": 476,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 477,
+        "fields": {
+            "tema": 14,
+            "texto": "Los psicólogos nunca deben usar pruebas bioquímicas o psicofisiológicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1057,
+        "fields": {
+            "pregunta": 477,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1058,
+        "fields": {
+            "pregunta": 477,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 478,
+        "fields": {
+            "tema": 14,
+            "texto": "Trabajar con un equipo a la hora de realizar el diagnóstico de un problema puede entorpecer la delimitación del problema."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1059,
+        "fields": {
+            "pregunta": 478,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1060,
+        "fields": {
+            "pregunta": 478,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 479,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina conductual trata de prevenir aquellas enfermedades y disfunciones corporales relacionadas con la mente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1061,
+        "fields": {
+            "pregunta": 479,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1062,
+        "fields": {
+            "pregunta": 479,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 480,
+        "fields": {
+            "tema": 14,
+            "texto": "Trabajando de manera individual se delimita de mejor forma el problema del paciente que trabajando en equipo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1063,
+        "fields": {
+            "pregunta": 480,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1064,
+        "fields": {
+            "pregunta": 480,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 481,
+        "fields": {
+            "tema": 14,
+            "texto": "Lapsicologíadelasaludrecogeinformaciónsobrediversasdisciplinas,comolamedicina,laeducación, la sociología."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1065,
+        "fields": {
+            "pregunta": 481,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1066,
+        "fields": {
+            "pregunta": 481,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 482,
+        "fields": {
+            "tema": 14,
+            "texto": "En la psicología de la salud se conocen con exactitud los factores de riesgo del desarrollo del ser humano."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1067,
+        "fields": {
+            "pregunta": 482,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1068,
+        "fields": {
+            "pregunta": 482,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 483,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina psicosomática despertó en los años 1930."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1069,
+        "fields": {
+            "pregunta": 483,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1070,
+        "fields": {
+            "pregunta": 483,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 484,
+        "fields": {
+            "tema": 14,
+            "texto": "La salud psicológica no se circunscribe solo a la ausencia de enfermedad, sino también a tener una mentalidad positiva, abierta al cambio y un equilibrio en el bienestar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1071,
+        "fields": {
+            "pregunta": 484,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1072,
+        "fields": {
+            "pregunta": 484,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 485,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud solo tiene importancia en una única dimensión: en la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1073,
+        "fields": {
+            "pregunta": 485,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1074,
+        "fields": {
+            "pregunta": 485,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 486,
+        "fields": {
+            "tema": 14,
+            "texto": "Matarazzo -1982- establece cuatro objetivos básicos en psicología de la salud: mantener y mejorar la salud mediante la promoción de comportamientos saludables, prevenir la enfermedad mediante la reducción de conductas de riesgo para la salud, mejorar la atención médica y las políticas de salud y tomar conciencia de los factores etiológicos de los problemas de salud:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1075,
+        "fields": {
+            "pregunta": 486,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1076,
+        "fields": {
+            "pregunta": 486,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 487,
+        "fields": {
+            "tema": 14,
+            "texto": "Un aspecto importante en la psicología de la salud es la humanización e individualización del trato con el paciente:"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1077,
+        "fields": {
+            "pregunta": 487,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1078,
+        "fields": {
+            "pregunta": 487,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 488,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud sigue un camino interdisciplinar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1079,
+        "fields": {
+            "pregunta": 488,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1080,
+        "fields": {
+            "pregunta": 488,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 489,
+        "fields": {
+            "tema": 14,
+            "texto": "Enelcasoenquelospadresnoesténjuntosesposibleevaluaralniñoconelconsentimientodesolouno de ellos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1081,
+        "fields": {
+            "pregunta": 489,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1082,
+        "fields": {
+            "pregunta": 489,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 490,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no es una ciencia interdisciplinar en la que puedan intervenir otras esferas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1083,
+        "fields": {
+            "pregunta": 490,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1084,
+        "fields": {
+            "pregunta": 490,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 491,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es una esfera holística e integral mientras que la psicología médica es mecanicista y centrada en los síntomas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1085,
+        "fields": {
+            "pregunta": 491,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1086,
+        "fields": {
+            "pregunta": 491,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 492,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud pretende mantener y mejorar la salud, promover actuaciones como el ejercicio físico y prevenir enfermedades enfatizando del mismo modo en la eficacia de sus tratamientos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1087,
+        "fields": {
+            "pregunta": 492,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1088,
+        "fields": {
+            "pregunta": 492,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 493,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud obtiene resultados en base únicamente a observaciones que no tienen por qué ser empíricas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1089,
+        "fields": {
+            "pregunta": 493,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1090,
+        "fields": {
+            "pregunta": 493,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 494,
+        "fields": {
+            "tema": 14,
+            "texto": "Lapsicologíadelasaludpuedeabarcarprocesoscomportamentalescomolaconductasocial,laconducta de salud y el control de impulsos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1091,
+        "fields": {
+            "pregunta": 494,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1092,
+        "fields": {
+            "pregunta": 494,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 495,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia que únicamente se basa en la observación, sin hacer alusión a análisis estadísticos o psicométricos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1093,
+        "fields": {
+            "pregunta": 495,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1094,
+        "fields": {
+            "pregunta": 495,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 496,
+        "fields": {
+            "tema": 14,
+            "texto": "Es difícil definir la conducta problema del paciente, y para ello se utilizan entrevistas y cuestionarios basados en valoraciones psicométricas como personalidad, inteligencia o fenómenos conductuales."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1095,
+        "fields": {
+            "pregunta": 496,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1096,
+        "fields": {
+            "pregunta": 496,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 497,
+        "fields": {
+            "tema": 14,
+            "texto": "Para hacer una metodología empírica se parte de una observación empírica, de profesionales y que esté avalada con alguna prueba física"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1097,
+        "fields": {
+            "pregunta": 497,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1098,
+        "fields": {
+            "pregunta": 497,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 498,
+        "fields": {
+            "tema": 14,
+            "texto": "Los datos de una investigación son analizados psicométricamente, dejándolos a la improvisación y al punto de vista del profesional."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1099,
+        "fields": {
+            "pregunta": 498,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1100,
+        "fields": {
+            "pregunta": 498,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 499,
+        "fields": {
+            "tema": 14,
+            "texto": "La definición de un problema se puede definir más fácilmente en solitario que con un equipo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1101,
+        "fields": {
+            "pregunta": 499,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1102,
+        "fields": {
+            "pregunta": 499,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 500,
+        "fields": {
+            "tema": 14,
+            "texto": "La salud es la ausencia de enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1103,
+        "fields": {
+            "pregunta": 500,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1104,
+        "fields": {
+            "pregunta": 500,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 501,
+        "fields": {
+            "tema": 14,
+            "texto": "Para mejorar en la psicología de la salud, y en la propia salud, es necesario tomar consciencia de los aspectos etiológicos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1105,
+        "fields": {
+            "pregunta": 501,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1106,
+        "fields": {
+            "pregunta": 501,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 502,
+        "fields": {
+            "tema": 14,
+            "texto": "La enfermedad de Crohn o el asma son claros ejemplos de enfermedades fisiológicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1107,
+        "fields": {
+            "pregunta": 502,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1108,
+        "fields": {
+            "pregunta": 502,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 503,
+        "fields": {
+            "tema": 14,
+            "texto": "El conductismo, otorgó a la psicología de la salud una perspectiva más interdisciplinar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1109,
+        "fields": {
+            "pregunta": 503,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1110,
+        "fields": {
+            "pregunta": 503,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 504,
+        "fields": {
+            "tema": 14,
+            "texto": "Una vez establecida nuestra hipótesis, se recabará una información más profunda sin necesidad de un consentimiento previo del paciente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1111,
+        "fields": {
+            "pregunta": 504,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1112,
+        "fields": {
+            "pregunta": 504,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 505,
+        "fields": {
+            "tema": 14,
+            "texto": "Un ámbito importante donde se destaca la relación de la psicología con la salud sería nuestras propias creencias."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1113,
+        "fields": {
+            "pregunta": 505,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1114,
+        "fields": {
+            "pregunta": 505,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 506,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud se interesa en acceder al plano explicativo de los fenómenos que se han observado y analizado."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1115,
+        "fields": {
+            "pregunta": 506,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1116,
+        "fields": {
+            "pregunta": 506,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 507,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología quiere llegar a hacer un análisis estadístico, psicométrico y sistemático de datos que se extraen de problemas que no siempre nos preocupan."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1117,
+        "fields": {
+            "pregunta": 507,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1118,
+        "fields": {
+            "pregunta": 507,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 508,
+        "fields": {
+            "tema": 14,
+            "texto": "Para la observación no solo es necesario tener buen ojo clínico"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1119,
+        "fields": {
+            "pregunta": 508,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1120,
+        "fields": {
+            "pregunta": 508,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 509,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología con la salud están conectadas por las propias creencias."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1121,
+        "fields": {
+            "pregunta": 509,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1122,
+        "fields": {
+            "pregunta": 509,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 510,
+        "fields": {
+            "tema": 14,
+            "texto": "Tratar enfermedades es uno de los objetivos que persigue la Psicología de la Salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1123,
+        "fields": {
+            "pregunta": 510,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1124,
+        "fields": {
+            "pregunta": 510,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 511,
+        "fields": {
+            "tema": 14,
+            "texto": "La dependencia emocional es considerado un factor de predicción de factores."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1125,
+        "fields": {
+            "pregunta": 511,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1126,
+        "fields": {
+            "pregunta": 511,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 512,
+        "fields": {
+            "tema": 14,
+            "texto": "La comorbilidad es una situación en la que prevalece más de una condición crónica en el individuo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1127,
+        "fields": {
+            "pregunta": 512,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1128,
+        "fields": {
+            "pregunta": 512,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 513,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud emprende un camino en conjunto icon otros profesionales, es un camino multidisciplinar porque intervienen la psicología, ciencias médicas, sociales y educativas implicadas en el proceso de cambio de la persona."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1129,
+        "fields": {
+            "pregunta": 513,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1130,
+        "fields": {
+            "pregunta": 513,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 514,
+        "fields": {
+            "tema": 14,
+            "texto": "La importancia de la psicología de la salud está dividida en dos dimensiones: salud y enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1131,
+        "fields": {
+            "pregunta": 514,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1132,
+        "fields": {
+            "pregunta": 514,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 515,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud solo pertenece a la psicología, le quita importancia al organismo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1133,
+        "fields": {
+            "pregunta": 515,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1134,
+        "fields": {
+            "pregunta": 515,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 516,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica emplea un ámbito más holístico e integral."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1135,
+        "fields": {
+            "pregunta": 516,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1136,
+        "fields": {
+            "pregunta": 516,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 517,
+        "fields": {
+            "tema": 14,
+            "texto": "Actualmente está en duda la importancia del trato profesional a los pacientes o de tratar a los usuarios con sumo cariño."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1137,
+        "fields": {
+            "pregunta": 517,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1138,
+        "fields": {
+            "pregunta": 517,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 518,
+        "fields": {
+            "tema": 14,
+            "texto": "El trabajo en solitario es beneficioso para identificar los problemas"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1139,
+        "fields": {
+            "pregunta": 518,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1140,
+        "fields": {
+            "pregunta": 518,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 519,
+        "fields": {
+            "tema": 14,
+            "texto": "Los psicólogos de la salud necesitan tener conocimientos médicos de los órganos implicados en las circunstancias de salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1141,
+        "fields": {
+            "pregunta": 519,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1142,
+        "fields": {
+            "pregunta": 519,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 520,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia que se ocupa sólamente del comportamiento humano."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1143,
+        "fields": {
+            "pregunta": 520,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1144,
+        "fields": {
+            "pregunta": 520,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 521,
+        "fields": {
+            "tema": 14,
+            "texto": "En psicología de la salud también se pueden tener en cuenta para contrastar información pruebas bioquímicas o psicofisiológicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1145,
+        "fields": {
+            "pregunta": 521,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1146,
+        "fields": {
+            "pregunta": 521,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 522,
+        "fields": {
+            "tema": 14,
+            "texto": "Los psicólogos suelen utilizar pruebas bioquímicas o psicofisiológicas para complementar el registro de los usuarios."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1147,
+        "fields": {
+            "pregunta": 522,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1148,
+        "fields": {
+            "pregunta": 522,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 523,
+        "fields": {
+            "tema": 14,
+            "texto": "En la dimensión de cuidados de la salud, la Psicología de la salud no tiene importancia."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1149,
+        "fields": {
+            "pregunta": 523,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1150,
+        "fields": {
+            "pregunta": 523,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 524,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud trabaja en un ámbito mecanicista, centrándose en curar una enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1151,
+        "fields": {
+            "pregunta": 524,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1152,
+        "fields": {
+            "pregunta": 524,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 525,
+        "fields": {
+            "tema": 14,
+            "texto": "Prevenir enfermedades con tratamientos cada vez más avanzados no es objetivo de la Psicología de la Salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1153,
+        "fields": {
+            "pregunta": 525,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1154,
+        "fields": {
+            "pregunta": 525,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 526,
+        "fields": {
+            "tema": 14,
+            "texto": "La ansiedad, el insomnio, la depresión o el aislamiento social, no son temas de los que se tenga que encargar la psicología de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1155,
+        "fields": {
+            "pregunta": 526,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1156,
+        "fields": {
+            "pregunta": 526,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 527,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología abarca los siguientes procesos comportamentales: control de impulsos, conducta social y conducta de salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1157,
+        "fields": {
+            "pregunta": 527,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1158,
+        "fields": {
+            "pregunta": 527,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 528,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina conductual trata de prevenir las enfermedades relacionadas con la mente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1159,
+        "fields": {
+            "pregunta": 528,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1160,
+        "fields": {
+            "pregunta": 528,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 529,
+        "fields": {
+            "tema": 14,
+            "texto": "Las enfermedades psicofisiológicas se refieren a las disfunciones exclusivamente orgánicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1161,
+        "fields": {
+            "pregunta": 529,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1162,
+        "fields": {
+            "pregunta": 529,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 530,
+        "fields": {
+            "tema": 14,
+            "texto": "Lapsicologíaesunacienciaquesebasaenlaobservaciónplenamente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1163,
+        "fields": {
+            "pregunta": 530,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1164,
+        "fields": {
+            "pregunta": 530,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 531,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud emplea un ámbito más integral sin quitarle importancia al organismo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1165,
+        "fields": {
+            "pregunta": 531,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1166,
+        "fields": {
+            "pregunta": 531,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 532,
+        "fields": {
+            "tema": 14,
+            "texto": "Lapsicologíadelasaludconstadetresdimensioneslascualesserefierenalasalud,laenfermedadylos cuidados de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1167,
+        "fields": {
+            "pregunta": 532,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1168,
+        "fields": {
+            "pregunta": 532,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 533,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es una disciplina que se apoya en un ámbito mecanicista, centrado en síntomas subyacentes y en sanar las enfermedades."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1169,
+        "fields": {
+            "pregunta": 533,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1170,
+        "fields": {
+            "pregunta": 533,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 534,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es originada por varias disciplinas"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1171,
+        "fields": {
+            "pregunta": 534,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1172,
+        "fields": {
+            "pregunta": 534,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 535,
+        "fields": {
+            "tema": 14,
+            "texto": "Para fomentar el proceso de cambio en el paciente, es necesario trabajar de manera solitaria para comprender y profundizar con mayor nivel en su problema"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1173,
+        "fields": {
+            "pregunta": 535,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1174,
+        "fields": {
+            "pregunta": 535,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 536,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los campos en psicología donde pueden existir mayor numero de limitaciones es en el Pensamiento"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1175,
+        "fields": {
+            "pregunta": 536,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1176,
+        "fields": {
+            "pregunta": 536,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 537,
+        "fields": {
+            "tema": 14,
+            "texto": "Mararazzo -1982- marcóalgunosobjetivosdelapsicologíadelasaludcomomantenerymejorarlasalud, promover actuaciones, prevenir la enfermedad con tratamientos especializados y la toma de conciencia de los aspectos etiológicos de los problemas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1177,
+        "fields": {
+            "pregunta": 537,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1178,
+        "fields": {
+            "pregunta": 537,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 538,
+        "fields": {
+            "tema": 14,
+            "texto": "Los psicólogos utilizamos pruebas bioquímicas o psicofisiologicas"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1179,
+        "fields": {
+            "pregunta": 538,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1180,
+        "fields": {
+            "pregunta": 538,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 539,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no se basa en valoraciones psicométricas"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1181,
+        "fields": {
+            "pregunta": 539,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1182,
+        "fields": {
+            "pregunta": 539,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 540,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los supuestos desde los que parte la psicología de la salud es que la salud y la enfermedad son únicamente cuestiones biológicas o médicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1183,
+        "fields": {
+            "pregunta": 540,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1184,
+        "fields": {
+            "pregunta": 540,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 541,
+        "fields": {
+            "tema": 14,
+            "texto": "La salud se define por el grado de cumplimiento de tres tipos de criterios: socioculturales, objetivos y subjetivos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1185,
+        "fields": {
+            "pregunta": 541,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1186,
+        "fields": {
+            "pregunta": 541,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 542,
+        "fields": {
+            "tema": 14,
+            "texto": "El principal valor de las medidas bioquímicas es su objetividad"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1187,
+        "fields": {
+            "pregunta": 542,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1188,
+        "fields": {
+            "pregunta": 542,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 543,
+        "fields": {
+            "tema": 14,
+            "texto": "Las medidas fisiológicas juegan un papel importante únicamente en el diagnóstico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1189,
+        "fields": {
+            "pregunta": 543,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1190,
+        "fields": {
+            "pregunta": 543,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 544,
+        "fields": {
+            "tema": 14,
+            "texto": "La entrevista es el instrumento más versátil para obtener información individual"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1191,
+        "fields": {
+            "pregunta": 544,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1192,
+        "fields": {
+            "pregunta": 544,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 545,
+        "fields": {
+            "tema": 14,
+            "texto": "El formato de la entrevista tiene que ser estrictamente estructurado"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1193,
+        "fields": {
+            "pregunta": 545,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1194,
+        "fields": {
+            "pregunta": 545,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 546,
+        "fields": {
+            "tema": 14,
+            "texto": "En las medidas psicofisiológicas su valor clave es el de objetividad"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1195,
+        "fields": {
+            "pregunta": 546,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1196,
+        "fields": {
+            "pregunta": 546,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 547,
+        "fields": {
+            "tema": 14,
+            "texto": "La observación directa es la técnica de evaluación preferida en psicología de la salud y suele ser de dos tipos: en contextos hospitalarios y ambulatorios."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1197,
+        "fields": {
+            "pregunta": 547,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1198,
+        "fields": {
+            "pregunta": 547,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 548,
+        "fields": {
+            "tema": 14,
+            "texto": "En la fase de auto-registro, el evaluador es el que realiza la toma de datos pertinente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1199,
+        "fields": {
+            "pregunta": 548,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1200,
+        "fields": {
+            "pregunta": 548,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 549,
+        "fields": {
+            "tema": 14,
+            "texto": "Algunas de las medidas fisiológicas son respuestas del sistema somático, del SNA y del SNC."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1201,
+        "fields": {
+            "pregunta": 549,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1202,
+        "fields": {
+            "pregunta": 549,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 550,
+        "fields": {
+            "tema": 14,
+            "texto": "Las Creencias de la propia persona acerca de su Estado de salud, es una de los aspectos que tiene que tener en cuenta un Psicólogo/a de la Salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1203,
+        "fields": {
+            "pregunta": 550,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1204,
+        "fields": {
+            "pregunta": 550,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 551,
+        "fields": {
+            "tema": 14,
+            "texto": "En la Psicología de la Salud, destacamos tres dimensiones: la salud, la enfermedad y cuidados de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1205,
+        "fields": {
+            "pregunta": 551,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1206,
+        "fields": {
+            "pregunta": 551,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 552,
+        "fields": {
+            "tema": 14,
+            "texto": "El pensamiento se considera uno de nuestros comportamientos humanos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1207,
+        "fields": {
+            "pregunta": 552,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1208,
+        "fields": {
+            "pregunta": 552,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 553,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología de la Salud pretende promover actuaciones como el ejercicio físico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1209,
+        "fields": {
+            "pregunta": 553,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1210,
+        "fields": {
+            "pregunta": 553,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 554,
+        "fields": {
+            "tema": 14,
+            "texto": "Algunos factores que pueden estar prediciendo enfermedades podrían ser la idea de dependencia hacia los demás."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1211,
+        "fields": {
+            "pregunta": 554,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1212,
+        "fields": {
+            "pregunta": 554,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 555,
+        "fields": {
+            "tema": 14,
+            "texto": "La actividad física pobre, el tabaco, el abuso del alcohol y una mala alimentación condicionan una esfera de estrés crónico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1213,
+        "fields": {
+            "pregunta": 555,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1214,
+        "fields": {
+            "pregunta": 555,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 556,
+        "fields": {
+            "tema": 14,
+            "texto": "El trabajo individual hace nuestra tarea como Psicólogos de la Salud más fácil, en comparación con el trabajo ‘en equipo’."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1215,
+        "fields": {
+            "pregunta": 556,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1216,
+        "fields": {
+            "pregunta": 556,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 557,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia que se basa únicamente en la observación."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1217,
+        "fields": {
+            "pregunta": 557,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1218,
+        "fields": {
+            "pregunta": 557,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 558,
+        "fields": {
+            "tema": 14,
+            "texto": "Dentro de la psicología de la salud solo se aprecia la figura del psicólogo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1219,
+        "fields": {
+            "pregunta": 558,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1220,
+        "fields": {
+            "pregunta": 558,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 559,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología de la Salud se caracteriza por su trabajo en solitario."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1221,
+        "fields": {
+            "pregunta": 559,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1222,
+        "fields": {
+            "pregunta": 559,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 560,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología positiva es una disciplina centrada en hallar los síntomas subyacentes de cara a sanar una enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1223,
+        "fields": {
+            "pregunta": 560,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1224,
+        "fields": {
+            "pregunta": 560,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 561,
+        "fields": {
+            "tema": 14,
+            "texto": "Según Matarazzo, la psicología de la salud tiene como único objetivo la evaluación y el diagnóstico de la salud y enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1225,
+        "fields": {
+            "pregunta": 561,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1226,
+        "fields": {
+            "pregunta": 561,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 562,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud trata de explicar cómo algunas personas afrontan una enfermedad con mayor o menor éxito que otras."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1227,
+        "fields": {
+            "pregunta": 562,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1228,
+        "fields": {
+            "pregunta": 562,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 563,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica pertenece a un ámbito holístico, centrado en los síntomas subyacentes y en sanar la enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1229,
+        "fields": {
+            "pregunta": 563,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1230,
+        "fields": {
+            "pregunta": 563,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 564,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud emplea un ámbito holístico, sin darle importancia al organismo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1231,
+        "fields": {
+            "pregunta": 564,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1232,
+        "fields": {
+            "pregunta": 564,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 565,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud pretende mantener y mejorar la salud, promover actuaciones saludables como el ejercicio físico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1233,
+        "fields": {
+            "pregunta": 565,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1234,
+        "fields": {
+            "pregunta": 565,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 566,
+        "fields": {
+            "tema": 14,
+            "texto": "El concepto de salud se circunscribe únicamente a la ausencia de enfermedad o de un diagnóstico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1235,
+        "fields": {
+            "pregunta": 566,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1236,
+        "fields": {
+            "pregunta": 566,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 567,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología de la Salud es fundamental en tres dimensiones: en la salud, en la enfermedad y en los cuidados de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1237,
+        "fields": {
+            "pregunta": 567,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1238,
+        "fields": {
+            "pregunta": 567,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 568,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología de la Salud es una ciencia interdisciplinar en la que intervienen ciencias médicas, sociales y educativas que están implicadas en el proceso de cambio personal."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1239,
+        "fields": {
+            "pregunta": 568,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1240,
+        "fields": {
+            "pregunta": 568,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 569,
+        "fields": {
+            "tema": 14,
+            "texto": "La dependencia hacia otras personas, no ser capaz de afrontar la soledad, el perfeccionismo excesivo, el egoísmo y los pensamientos distorsionados de todo o nada son actitudes disfuncionales que aumentan el riesgo de padecer enfermedades."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1241,
+        "fields": {
+            "pregunta": 569,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1242,
+        "fields": {
+            "pregunta": 569,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 570,
+        "fields": {
+            "tema": 14,
+            "texto": "Las ideas y creencias se ven relacionadas con la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1243,
+        "fields": {
+            "pregunta": 570,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1244,
+        "fields": {
+            "pregunta": 570,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 571,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología se basa en la observación plenamente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1245,
+        "fields": {
+            "pregunta": 571,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1246,
+        "fields": {
+            "pregunta": 571,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 572,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no se considera una ciencia interdisciplinar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1247,
+        "fields": {
+            "pregunta": 572,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1248,
+        "fields": {
+            "pregunta": 572,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 573,
+        "fields": {
+            "tema": 14,
+            "texto": "Prevenir la enfermedad y tener tratamientos más adecuados fue uno de los objetivos propuestos por Matarazzo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1249,
+        "fields": {
+            "pregunta": 573,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1250,
+        "fields": {
+            "pregunta": 573,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 574,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia basada en la observación solamente"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1251,
+        "fields": {
+            "pregunta": 574,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1252,
+        "fields": {
+            "pregunta": 574,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 575,
+        "fields": {
+            "tema": 14,
+            "texto": "La conducta de salud es un proceso comportamental"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1253,
+        "fields": {
+            "pregunta": 575,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1254,
+        "fields": {
+            "pregunta": 575,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 576,
+        "fields": {
+            "tema": 14,
+            "texto": "El ambiente no tiene importancia en el organismo"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1255,
+        "fields": {
+            "pregunta": 576,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1256,
+        "fields": {
+            "pregunta": 576,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 577,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es asistemática"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1257,
+        "fields": {
+            "pregunta": 577,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1258,
+        "fields": {
+            "pregunta": 577,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 578,
+        "fields": {
+            "tema": 14,
+            "texto": "Las emociones no influyen en la conducta"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1259,
+        "fields": {
+            "pregunta": 578,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1260,
+        "fields": {
+            "pregunta": 578,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 579,
+        "fields": {
+            "tema": 14,
+            "texto": "La salud no se circunscribe únicamente a la ausencia de una enfermedad"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1261,
+        "fields": {
+            "pregunta": 579,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1262,
+        "fields": {
+            "pregunta": 579,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 580,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud tiene importancia en la salud, las enfermedad y en las adicciones"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1263,
+        "fields": {
+            "pregunta": 580,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1264,
+        "fields": {
+            "pregunta": 580,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 581,
+        "fields": {
+            "tema": 14,
+            "texto": "Según el psicoanálisis todas la enfermedades tienen origen orgánico"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1265,
+        "fields": {
+            "pregunta": 581,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1266,
+        "fields": {
+            "pregunta": 581,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 582,
+        "fields": {
+            "tema": 14,
+            "texto": "Los psicólogos de la salud no necesitan conocimientos médicos de los órganos ya que trabajan con la conducta"
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1267,
+        "fields": {
+            "pregunta": 582,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1268,
+        "fields": {
+            "pregunta": 582,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 583,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es una ciencia exacta y capaz de predecir el comportamiento."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1269,
+        "fields": {
+            "pregunta": 583,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1270,
+        "fields": {
+            "pregunta": 583,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 584,
+        "fields": {
+            "tema": 14,
+            "texto": "Las emociones, tanto positivas como negativas, influyen determinantemente en la conducta del individuo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1271,
+        "fields": {
+            "pregunta": 584,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1272,
+        "fields": {
+            "pregunta": 584,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 585,
+        "fields": {
+            "tema": 14,
+            "texto": "A la hora de hacer un diagnóstico, es mejor hacerlo en solitario que trabajar interdisciplinarmente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1273,
+        "fields": {
+            "pregunta": 585,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1274,
+        "fields": {
+            "pregunta": 585,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 586,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es importante en tres dimensiones: la Salud, la enfermedad y los cuidados de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1275,
+        "fields": {
+            "pregunta": 586,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1276,
+        "fields": {
+            "pregunta": 586,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 587,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud, no solo se debe a la psicología, sino que se origina desde muchos ámbitos y disciplinas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1277,
+        "fields": {
+            "pregunta": 587,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1278,
+        "fields": {
+            "pregunta": 587,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 588,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no emplea un ámbito más holístico e integral y le quita importancia al organismo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1279,
+        "fields": {
+            "pregunta": 588,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1280,
+        "fields": {
+            "pregunta": 588,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 589,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica es una disciplina organicista, centrada en los síntomas y en curar una enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1281,
+        "fields": {
+            "pregunta": 589,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1282,
+        "fields": {
+            "pregunta": 589,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 590,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina conductual y la psicología de la salud nacen desde el ámbito de la educación, la conducta y el aprendizaje."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1283,
+        "fields": {
+            "pregunta": 590,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1284,
+        "fields": {
+            "pregunta": 590,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 591,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud pretende mantener y mejorar la salud promoviendo el ejercicio físico, entre otras cosas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1285,
+        "fields": {
+            "pregunta": 591,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1286,
+        "fields": {
+            "pregunta": 591,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 592,
+        "fields": {
+            "tema": 14,
+            "texto": "No es necesario tomar conciencia de los aspectos etiológicos, que son aquellos factores en los que las personas pueden tener más riesgo o se encuentre en una situación donde tenga más vulnerabilidad para tener un problema."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1287,
+        "fields": {
+            "pregunta": 592,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1288,
+        "fields": {
+            "pregunta": 592,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 593,
+        "fields": {
+            "tema": 14,
+            "texto": "Una de las conexiones que tiene la psicología de la salud con respecto a la enfermedad son las propias creencias con las que cuenta el individuo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1289,
+        "fields": {
+            "pregunta": 593,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1290,
+        "fields": {
+            "pregunta": 593,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 594,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la Salud es importante en 3 dimensiones: en la Salud, en la enfermedad y en la percepción de la enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1291,
+        "fields": {
+            "pregunta": 594,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1292,
+        "fields": {
+            "pregunta": 594,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 595,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la Salud pertenece únicamente al ámbito de la psicología."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1293,
+        "fields": {
+            "pregunta": 595,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1294,
+        "fields": {
+            "pregunta": 595,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 596,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología de la Salud es interdisciplinar, cuenta con diferentes ciencias y profesionales."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1295,
+        "fields": {
+            "pregunta": 596,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1296,
+        "fields": {
+            "pregunta": 596,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 597,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica es una disciplina mecanicista, mientras que la psicología de la Salud se mueve en una disciplina más holística."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1297,
+        "fields": {
+            "pregunta": 597,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1298,
+        "fields": {
+            "pregunta": 597,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 598,
+        "fields": {
+            "tema": 14,
+            "texto": "La salud es únicamente ausencia de enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1299,
+        "fields": {
+            "pregunta": 598,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1300,
+        "fields": {
+            "pregunta": 598,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 599,
+        "fields": {
+            "tema": 14,
+            "texto": "Un psicólogo de la Salud no necesita tener conocimientos médicos ya que únicamente se centra en el ámbito cognitivo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1301,
+        "fields": {
+            "pregunta": 599,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1302,
+        "fields": {
+            "pregunta": 599,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 600,
+        "fields": {
+            "tema": 14,
+            "texto": "Las enfermedades psicofisiológicas consisten en la participación activa de factores psicológicos en enfermedades orgánicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1303,
+        "fields": {
+            "pregunta": 600,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1304,
+        "fields": {
+            "pregunta": 600,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 601,
+        "fields": {
+            "tema": 14,
+            "texto": "La medicina conductual trata tanto del tratamiento como la prevención de enfermedades o disfunciones corporales."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1305,
+        "fields": {
+            "pregunta": 601,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1306,
+        "fields": {
+            "pregunta": 601,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 602,
+        "fields": {
+            "tema": 14,
+            "texto": "Un factor que puede predecir la enfermedad es la dependencia a lo que piensan los demás de nosotros."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1307,
+        "fields": {
+            "pregunta": 602,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1308,
+        "fields": {
+            "pregunta": 602,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 603,
+        "fields": {
+            "tema": 14,
+            "texto": "No se necesita el consentimiento de los padres siendo menor de 18 años para realizar una recogida de datos del cliente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1309,
+        "fields": {
+            "pregunta": 603,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1310,
+        "fields": {
+            "pregunta": 603,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 604,
+        "fields": {
+            "tema": 14,
+            "texto": "La Psicología de la Salud es interdisciplinar."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1311,
+        "fields": {
+            "pregunta": 604,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1312,
+        "fields": {
+            "pregunta": 604,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 605,
+        "fields": {
+            "tema": 14,
+            "texto": "En la Psicología de la Salud se implican las ciencias médicas, sociales y educativas junto con la Psicología para realizar un proceso de cambio."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1313,
+        "fields": {
+            "pregunta": 605,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1314,
+        "fields": {
+            "pregunta": 605,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 606,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia que sólo se ocupa del comportamiento humano."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1315,
+        "fields": {
+            "pregunta": 606,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1316,
+        "fields": {
+            "pregunta": 606,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 607,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología médica tiene un ámbito holístico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1317,
+        "fields": {
+            "pregunta": 607,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1318,
+        "fields": {
+            "pregunta": 607,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 608,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud pretende mantener y mejorar la salud, prevenir la enfermedad y tener tratamientos acertados y especializados."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1319,
+        "fields": {
+            "pregunta": 608,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1320,
+        "fields": {
+            "pregunta": 608,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 609,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es capaz de predecir el comportamiento e identificar los factores de riesgo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1321,
+        "fields": {
+            "pregunta": 609,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1322,
+        "fields": {
+            "pregunta": 609,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 610,
+        "fields": {
+            "tema": 14,
+            "texto": "La dependencia hacia los demás es una variable causal que puede predecir una enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1323,
+        "fields": {
+            "pregunta": 610,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1324,
+        "fields": {
+            "pregunta": 610,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 611,
+        "fields": {
+            "tema": 14,
+            "texto": "Existe comorbilidad cuando prevalece más de una condición crónica en el individuo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1325,
+        "fields": {
+            "pregunta": 611,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1326,
+        "fields": {
+            "pregunta": 611,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 612,
+        "fields": {
+            "tema": 14,
+            "texto": "El hecho de ser perfeccionista es una variable causal que puede predecir una enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1327,
+        "fields": {
+            "pregunta": 612,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1328,
+        "fields": {
+            "pregunta": 612,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 613,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología es una ciencia que se ocupa del comportamiento humano y animal y de los procesos mentales."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1329,
+        "fields": {
+            "pregunta": 613,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1330,
+        "fields": {
+            "pregunta": 613,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 614,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología intenta mantener y descuidar las capacidades cognitivas superiores como el lenguaje, la memoria, la atención o la percepción."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1331,
+        "fields": {
+            "pregunta": 614,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1332,
+        "fields": {
+            "pregunta": 614,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 615,
+        "fields": {
+            "tema": 14,
+            "texto": "La observación se basa en el empirismo, partiéndose de una observación con un buen ojo clínico y que esté avalada con alguna prueba física que tenga que ver con el contraste un poco más objetivo, como pruebas bioquímicas o psicofisiológicas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1333,
+        "fields": {
+            "pregunta": 615,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1334,
+        "fields": {
+            "pregunta": 615,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 616,
+        "fields": {
+            "tema": 14,
+            "texto": "En un sentido más objetivo, el concepto de salud se limita únicamente a la ausencia de enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1335,
+        "fields": {
+            "pregunta": 616,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1336,
+        "fields": {
+            "pregunta": 616,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 617,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud es importante en la salud, en la enfermedad y en los cuidados de la salud."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1337,
+        "fields": {
+            "pregunta": 617,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1338,
+        "fields": {
+            "pregunta": 617,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 618,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud solamente pertenece a la psicología."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1339,
+        "fields": {
+            "pregunta": 618,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1340,
+        "fields": {
+            "pregunta": 618,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 619,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud pretende mantener y mejorar la salud y promover actuaciones como el ejercicio físico."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1341,
+        "fields": {
+            "pregunta": 619,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1342,
+        "fields": {
+            "pregunta": 619,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 620,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los objetivos de Matarazzo es prevenir la enfermedad y tener unos tratamientos cada vez más acertados y más especializados."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1343,
+        "fields": {
+            "pregunta": 620,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1344,
+        "fields": {
+            "pregunta": 620,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 621,
+        "fields": {
+            "tema": 14,
+            "texto": "Uno de los objetivos menos importantes de Matarazzo es tomar conciencia de los aspectos etiológicos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1345,
+        "fields": {
+            "pregunta": 621,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1346,
+        "fields": {
+            "pregunta": 621,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 622,
+        "fields": {
+            "tema": 14,
+            "texto": "Un aspecto importante en psicología de la salud es la comorbilidad, es decir, cuando prevalece más de una condición crónica en el individuo."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1347,
+        "fields": {
+            "pregunta": 622,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1348,
+        "fields": {
+            "pregunta": 622,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 623,
+        "fields": {
+            "tema": 14,
+            "texto": "Existen dificultades para definir el problema por el que se acude a consulta."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1349,
+        "fields": {
+            "pregunta": 623,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1350,
+        "fields": {
+            "pregunta": 623,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 624,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología está conectada a la salud a partir de nuestras propias creencias, sobre qué pensamos de nuestra salud o en qué consiste."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1351,
+        "fields": {
+            "pregunta": 624,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1352,
+        "fields": {
+            "pregunta": 624,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 625,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no emplea un ámbito holístico, ni integral."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1353,
+        "fields": {
+            "pregunta": 625,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1354,
+        "fields": {
+            "pregunta": 625,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 626,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología sólo hace uso de la observación."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1355,
+        "fields": {
+            "pregunta": 626,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1356,
+        "fields": {
+            "pregunta": 626,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 627,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud no se basa en valoraciones psicométricas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1357,
+        "fields": {
+            "pregunta": 627,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1358,
+        "fields": {
+            "pregunta": 627,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 628,
+        "fields": {
+            "tema": 14,
+            "texto": "Es común que en la psicología de la salud trabajen en equipo profesionales de diferentes disciplinas."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1359,
+        "fields": {
+            "pregunta": 628,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1360,
+        "fields": {
+            "pregunta": 628,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 629,
+        "fields": {
+            "tema": 14,
+            "texto": "El trato terapeútico no tiene relevancia para el paciente."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1361,
+        "fields": {
+            "pregunta": 629,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1362,
+        "fields": {
+            "pregunta": 629,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 630,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología clínica de la salud está más centrada en la existencia de síntomas, con un enfoque mecanicista."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1363,
+        "fields": {
+            "pregunta": 630,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1364,
+        "fields": {
+            "pregunta": 630,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 631,
+        "fields": {
+            "tema": 14,
+            "texto": "La relación entre la ansiedad y síntomas como la taquicardia sería un ejemplo de enfermedad psicosomática."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1365,
+        "fields": {
+            "pregunta": 631,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1366,
+        "fields": {
+            "pregunta": 631,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 632,
+        "fields": {
+            "tema": 14,
+            "texto": "El hecho de experimentar somatizaciones hace que se promueva el desarrollo de buenos hábitos, como el deporte."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1367,
+        "fields": {
+            "pregunta": 632,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1368,
+        "fields": {
+            "pregunta": 632,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 633,
+        "fields": {
+            "tema": 14,
+            "texto": "Se advierten situaciones problemas sobre todo en el ámbito de la pareja y en la crianza de los hijos."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1369,
+        "fields": {
+            "pregunta": 633,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1370,
+        "fields": {
+            "pregunta": 633,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 634,
+        "fields": {
+            "tema": 14,
+            "texto": "Es importante que la psicología de la salud tome una metodología válida y fiable."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1371,
+        "fields": {
+            "pregunta": 634,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1372,
+        "fields": {
+            "pregunta": 634,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 635,
+        "fields": {
+            "tema": 14,
+            "texto": "La psicología de la salud se circunscribe sólo a la ausencia de enfermedad."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1373,
+        "fields": {
+            "pregunta": 635,
+            "texto": "Verdadero",
+            "es_correcta": false
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1374,
+        "fields": {
+            "pregunta": 635,
+            "texto": "Falso",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.pregunta",
+        "pk": 636,
+        "fields": {
+            "tema": 14,
+            "texto": "La importancia de la psicología de la salud se puede resumir en tres ámbitos: salud, enfermedad y cuidados."
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1375,
+        "fields": {
+            "pregunta": 636,
+            "texto": "Verdadero",
+            "es_correcta": true
+        }
+    },
+    {
+        "model": "examenes.opcionderespuesta",
+        "pk": 1376,
+        "fields": {
+            "pregunta": 636,
+            "texto": "Falso",
+            "es_correcta": false
+        }
+    }
+]

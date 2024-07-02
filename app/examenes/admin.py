@@ -19,7 +19,7 @@ admin.site.register(ProgresoUsuario)
 
 @admin.register(Seccion)
 class SeccionAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'asignatura', 'orden')
+    list_display = ('nombre', 'tema', 'asignatura', 'orden')
 
 
 @admin.register(Subseccion)
@@ -58,7 +58,7 @@ class TemaAdmin(admin.ModelAdmin):
 
 @admin.register(Pregunta)
 class PreguntaAdmin(admin.ModelAdmin):
-    list_display = ('abreviar_texto',  'tema', 'id', 'active')
+    list_display = ('abreviar_texto',  'tema', 'subseccion', 'id', 'active')
     list_editable = ('active',)
 
     def abreviar_texto(self, obj):

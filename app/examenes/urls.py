@@ -22,5 +22,6 @@ urlpatterns = [
 
     path('roadmap/<int:asignatura_id>/', views.roadmap, name='roadmap'),
     path('seccion/<int:seccion_id>/', views.detalle_seccion, name='detalle_seccion'),
+    path('subseccion/test/<int:subseccion_id>/', views.realizar_test_subseccion, name='realizar_test_subseccion')
 
 ]
